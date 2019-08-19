@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		"AsposeHtmlCloud::AsposeHtmlCloudPackageTests::ProductTarget" /* AsposeHtmlCloudPackageTests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = OBJ_131 /* Build configuration list for PBXAggregateTarget "AsposeHtmlCloudPackageTests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				OBJ_134 /* PBXTargetDependency */,
+			);
+			name = AsposeHtmlCloudPackageTests;
+			productName = AsposeHtmlCloudPackageTests;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		D9CDDFE82301930700FACAF0 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		D9CDDFE92301935B00FACAF0 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		D9CDDFEA2301D07A00FACAF0 /* AsposeHtmlCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* AsposeHtmlCloudTests.swift */; };
+		OBJ_100 /* HtmlAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* HtmlAPI.swift */; };
+		OBJ_101 /* StorageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* StorageAPI.swift */; };
+		OBJ_102 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* AlamofireImplementations.swift */; };
+		OBJ_103 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* CodableHelper.swift */; };
+		OBJ_104 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* Configuration.swift */; };
+		OBJ_105 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Extensions.swift */; };
+		OBJ_106 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* JSONEncodableEncoding.swift */; };
+		OBJ_107 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* JSONEncodingHelper.swift */; };
+		OBJ_108 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Models.swift */; };
+		OBJ_109 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* AuthResponse.swift */; };
+		OBJ_110 /* DiscUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DiscUsage.swift */; };
+		OBJ_111 /* ErrorDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* ErrorDetails.swift */; };
+		OBJ_112 /* FileVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* FileVersion.swift */; };
+		OBJ_113 /* FileVersions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* FileVersions.swift */; };
+		OBJ_114 /* FilesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* FilesList.swift */; };
+		OBJ_115 /* FilesUploadResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* FilesUploadResult.swift */; };
+		OBJ_117 /* ModelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ModelError.swift */; };
+		OBJ_118 /* ObjectExist.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* ObjectExist.swift */; };
+		OBJ_119 /* StorageExist.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* StorageExist.swift */; };
+		OBJ_120 /* StorageFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* StorageFile.swift */; };
+		OBJ_122 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_141 /* AsposeStorageCloudTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* AsposeStorageCloudTests.swift */; };
+		OBJ_142 /* TestBaseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* TestBaseCase.swift */; };
+		OBJ_144 /* AsposeHtmlCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "AsposeHtmlCloud::AsposeHtmlCloud::Product" /* AsposeHtmlCloud.framework */; };
+		OBJ_145 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Alamofire::Alamofire::Product" /* Alamofire.framework */; };
+		OBJ_69 /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* AFError.swift */; };
+		OBJ_70 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Alamofire.swift */; };
+		OBJ_71 /* DispatchQueue+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* DispatchQueue+Alamofire.swift */; };
+		OBJ_72 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* MultipartFormData.swift */; };
+		OBJ_73 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* NetworkReachabilityManager.swift */; };
+		OBJ_74 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Notifications.swift */; };
+		OBJ_75 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* ParameterEncoding.swift */; };
+		OBJ_76 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Request.swift */; };
+		OBJ_77 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Response.swift */; };
+		OBJ_78 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* ResponseSerialization.swift */; };
+		OBJ_79 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Result.swift */; };
+		OBJ_80 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* ServerTrustPolicy.swift */; };
+		OBJ_81 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* SessionDelegate.swift */; };
+		OBJ_82 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* SessionManager.swift */; };
+		OBJ_83 /* TaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* TaskDelegate.swift */; };
+		OBJ_84 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Timeline.swift */; };
+		OBJ_85 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Validation.swift */; };
+		OBJ_92 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Package.swift */; };
+		OBJ_98 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* APIHelper.swift */; };
+		OBJ_99 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* APIs.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9CDDFE42301920B00FACAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alamofire::Alamofire";
+			remoteInfo = Alamofire;
+		};
+		D9CDDFE52301920B00FACAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AsposeHtmlCloud::AsposeHtmlCloud";
+			remoteInfo = AsposeHtmlCloud;
+		};
+		D9CDDFE62301920B00FACAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "Alamofire::Alamofire";
+			remoteInfo = Alamofire;
+		};
+		D9CDDFE72301923200FACAF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "AsposeHtmlCloud::AsposeHtmlCloudTests";
+			remoteInfo = AsposeHtmlCloudTests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		"Alamofire::Alamofire::Product" /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AsposeHtmlCloud::AsposeHtmlCloud::Product" /* AsposeHtmlCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AsposeHtmlCloud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"AsposeHtmlCloud::AsposeHtmlCloudTests::Product" /* AsposeHtmlCloudTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = AsposeHtmlCloudTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_10 /* APIs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		OBJ_12 /* HtmlAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HtmlAPI.swift; sourceTree = "<group>"; };
+		OBJ_13 /* StorageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAPI.swift; sourceTree = "<group>"; };
+		OBJ_14 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
+		OBJ_15 /* CodableHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		OBJ_16 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		OBJ_17 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		OBJ_18 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		OBJ_19 /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
+		OBJ_20 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		OBJ_22 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		OBJ_23 /* DiscUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscUsage.swift; sourceTree = "<group>"; };
+		OBJ_24 /* ErrorDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorDetails.swift; sourceTree = "<group>"; };
+		OBJ_25 /* FileVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileVersion.swift; sourceTree = "<group>"; };
+		OBJ_26 /* FileVersions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileVersions.swift; sourceTree = "<group>"; };
+		OBJ_27 /* FilesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesList.swift; sourceTree = "<group>"; };
+		OBJ_28 /* FilesUploadResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesUploadResult.swift; sourceTree = "<group>"; };
+		OBJ_30 /* ModelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelError.swift; sourceTree = "<group>"; };
+		OBJ_31 /* ObjectExist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectExist.swift; sourceTree = "<group>"; };
+		OBJ_32 /* StorageExist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageExist.swift; sourceTree = "<group>"; };
+		OBJ_33 /* StorageFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageFile.swift; sourceTree = "<group>"; };
+		OBJ_36 /* AsposeHtmlCloudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsposeHtmlCloudTests.swift; sourceTree = "<group>"; };
+		OBJ_37 /* AsposeStorageCloudTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsposeStorageCloudTests.swift; sourceTree = "<group>"; };
+		OBJ_38 /* TestBaseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBaseCase.swift; sourceTree = "<group>"; };
+		OBJ_39 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = SOURCE_ROOT; };
+		OBJ_42 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ingress/Documents/Aspose.HTML.Cloud.SDK.Swift/.build/checkouts/Alamofire.git--8259015919227665288/Package.swift"; sourceTree = "<group>"; };
+		OBJ_43 /* AFError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFError.swift; sourceTree = "<group>"; };
+		OBJ_44 /* Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		OBJ_45 /* DispatchQueue+Alamofire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchQueue+Alamofire.swift"; sourceTree = "<group>"; };
+		OBJ_46 /* MultipartFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipartFormData.swift; sourceTree = "<group>"; };
+		OBJ_47 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		OBJ_48 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		OBJ_49 /* ParameterEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoding.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		OBJ_51 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		OBJ_52 /* ResponseSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseSerialization.swift; sourceTree = "<group>"; };
+		OBJ_53 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		OBJ_54 /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		OBJ_55 /* SessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDelegate.swift; sourceTree = "<group>"; };
+		OBJ_56 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		OBJ_57 /* TaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDelegate.swift; sourceTree = "<group>"; };
+		OBJ_58 /* Timeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timeline.swift; sourceTree = "<group>"; };
+		OBJ_59 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_9 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		OBJ_121 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_122 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_143 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_144 /* AsposeHtmlCloud.framework in Frameworks */,
+				OBJ_145 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		OBJ_11 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_12 /* HtmlAPI.swift */,
+				OBJ_13 /* StorageAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		OBJ_21 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_22 /* AuthResponse.swift */,
+				OBJ_23 /* DiscUsage.swift */,
+				OBJ_24 /* ErrorDetails.swift */,
+				OBJ_25 /* FileVersion.swift */,
+				OBJ_26 /* FileVersions.swift */,
+				OBJ_27 /* FilesList.swift */,
+				OBJ_28 /* FilesUploadResult.swift */,
+				OBJ_30 /* ModelError.swift */,
+				OBJ_31 /* ObjectExist.swift */,
+				OBJ_32 /* StorageExist.swift */,
+				OBJ_33 /* StorageFile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		OBJ_34 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_35 /* AsposeHtmlCloudTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_35 /* AsposeHtmlCloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_36 /* AsposeHtmlCloudTests.swift */,
+				OBJ_37 /* AsposeStorageCloudTests.swift */,
+				OBJ_38 /* TestBaseCase.swift */,
+			);
+			name = AsposeHtmlCloudTests;
+			path = Tests/AsposeHtmlCloudTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_40 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* Alamofire 4.8.0 */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		OBJ_41 /* Alamofire 4.8.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_42 /* Package.swift */,
+				OBJ_43 /* AFError.swift */,
+				OBJ_44 /* Alamofire.swift */,
+				OBJ_45 /* DispatchQueue+Alamofire.swift */,
+				OBJ_46 /* MultipartFormData.swift */,
+				OBJ_47 /* NetworkReachabilityManager.swift */,
+				OBJ_48 /* Notifications.swift */,
+				OBJ_49 /* ParameterEncoding.swift */,
+				OBJ_50 /* Request.swift */,
+				OBJ_51 /* Response.swift */,
+				OBJ_52 /* ResponseSerialization.swift */,
+				OBJ_53 /* Result.swift */,
+				OBJ_54 /* ServerTrustPolicy.swift */,
+				OBJ_55 /* SessionDelegate.swift */,
+				OBJ_56 /* SessionManager.swift */,
+				OBJ_57 /* TaskDelegate.swift */,
+				OBJ_58 /* Timeline.swift */,
+				OBJ_59 /* Validation.swift */,
+			);
+			name = "Alamofire 4.8.0";
+			path = ".build/checkouts/Alamofire.git--8259015919227665288/Source";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_34 /* Tests */,
+				OBJ_39 /* docs */,
+				OBJ_40 /* Dependencies */,
+				OBJ_60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				"AsposeHtmlCloud::AsposeHtmlCloudTests::Product" /* AsposeHtmlCloudTests.xctest */,
+				"Alamofire::Alamofire::Product" /* Alamofire.framework */,
+				"AsposeHtmlCloud::AsposeHtmlCloud::Product" /* AsposeHtmlCloud.framework */,
+			);
+			name = Products;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* AsposeHtmlCloud */,
+			);
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* AsposeHtmlCloud */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* APIHelper.swift */,
+				OBJ_10 /* APIs.swift */,
+				OBJ_11 /* APIs */,
+				OBJ_14 /* AlamofireImplementations.swift */,
+				OBJ_15 /* CodableHelper.swift */,
+				OBJ_16 /* Configuration.swift */,
+				OBJ_17 /* Extensions.swift */,
+				OBJ_18 /* JSONEncodableEncoding.swift */,
+				OBJ_19 /* JSONEncodingHelper.swift */,
+				OBJ_20 /* Models.swift */,
+				OBJ_21 /* Models */,
+			);
+			name = AsposeHtmlCloud;
+			path = Sources/AsposeHtmlCloud;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		"Alamofire::Alamofire" /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				OBJ_68 /* Sources */,
+				OBJ_86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = "Alamofire::Alamofire::Product" /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_88 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */;
+			buildPhases = (
+				OBJ_91 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlamofirePackageDescription;
+			productName = AlamofirePackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+		"AsposeHtmlCloud::AsposeHtmlCloud" /* AsposeHtmlCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_94 /* Build configuration list for PBXNativeTarget "AsposeHtmlCloud" */;
+			buildPhases = (
+				OBJ_97 /* Sources */,
+				OBJ_121 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_123 /* PBXTargetDependency */,
+			);
+			name = AsposeHtmlCloud;
+			productName = AsposeHtmlCloud;
+			productReference = "AsposeHtmlCloud::AsposeHtmlCloud::Product" /* AsposeHtmlCloud.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		"AsposeHtmlCloud::AsposeHtmlCloudTests" /* AsposeHtmlCloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_136 /* Build configuration list for PBXNativeTarget "AsposeHtmlCloudTests" */;
+			buildPhases = (
+				OBJ_139 /* Sources */,
+				OBJ_143 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_146 /* PBXTargetDependency */,
+				OBJ_147 /* PBXTargetDependency */,
+			);
+			name = AsposeHtmlCloudTests;
+			productName = AsposeHtmlCloudTests;
+			productReference = "AsposeHtmlCloud::AsposeHtmlCloudTests::Product" /* AsposeHtmlCloudTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		"AsposeHtmlCloud::SwiftPMPackageDescription" /* AsposeHtmlCloudPackageDescription */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_125 /* Build configuration list for PBXNativeTarget "AsposeHtmlCloudPackageDescription" */;
+			buildPhases = (
+				OBJ_128 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AsposeHtmlCloudPackageDescription;
+			productName = AsposeHtmlCloudPackageDescription;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		OBJ_1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 9999;
+			};
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "AsposeHtmlCloud" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				"Alamofire::Alamofire" /* Alamofire */,
+				"Alamofire::SwiftPMPackageDescription" /* AlamofirePackageDescription */,
+				"AsposeHtmlCloud::AsposeHtmlCloud" /* AsposeHtmlCloud */,
+				"AsposeHtmlCloud::SwiftPMPackageDescription" /* AsposeHtmlCloudPackageDescription */,
+				"AsposeHtmlCloud::AsposeHtmlCloudPackageTests::ProductTarget" /* AsposeHtmlCloudPackageTests */,
+				"AsposeHtmlCloud::AsposeHtmlCloudTests" /* AsposeHtmlCloudTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_128 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				D9CDDFE92301935B00FACAF0 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_139 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				D9CDDFEA2301D07A00FACAF0 /* AsposeHtmlCloudTests.swift in Sources */,
+				OBJ_141 /* AsposeStorageCloudTests.swift in Sources */,
+				OBJ_142 /* TestBaseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_69 /* AFError.swift in Sources */,
+				OBJ_70 /* Alamofire.swift in Sources */,
+				OBJ_71 /* DispatchQueue+Alamofire.swift in Sources */,
+				OBJ_72 /* MultipartFormData.swift in Sources */,
+				OBJ_73 /* NetworkReachabilityManager.swift in Sources */,
+				OBJ_74 /* Notifications.swift in Sources */,
+				OBJ_75 /* ParameterEncoding.swift in Sources */,
+				OBJ_76 /* Request.swift in Sources */,
+				OBJ_77 /* Response.swift in Sources */,
+				OBJ_78 /* ResponseSerialization.swift in Sources */,
+				OBJ_79 /* Result.swift in Sources */,
+				OBJ_80 /* ServerTrustPolicy.swift in Sources */,
+				OBJ_81 /* SessionDelegate.swift in Sources */,
+				OBJ_82 /* SessionManager.swift in Sources */,
+				OBJ_83 /* TaskDelegate.swift in Sources */,
+				OBJ_84 /* Timeline.swift in Sources */,
+				OBJ_85 /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_92 /* Package.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_98 /* APIHelper.swift in Sources */,
+				OBJ_99 /* APIs.swift in Sources */,
+				OBJ_100 /* HtmlAPI.swift in Sources */,
+				OBJ_101 /* StorageAPI.swift in Sources */,
+				OBJ_102 /* AlamofireImplementations.swift in Sources */,
+				OBJ_103 /* CodableHelper.swift in Sources */,
+				OBJ_104 /* Configuration.swift in Sources */,
+				OBJ_105 /* Extensions.swift in Sources */,
+				OBJ_106 /* JSONEncodableEncoding.swift in Sources */,
+				OBJ_107 /* JSONEncodingHelper.swift in Sources */,
+				OBJ_108 /* Models.swift in Sources */,
+				OBJ_109 /* AuthResponse.swift in Sources */,
+				D9CDDFE82301930700FACAF0 /* Package.swift in Sources */,
+				OBJ_110 /* DiscUsage.swift in Sources */,
+				OBJ_111 /* ErrorDetails.swift in Sources */,
+				OBJ_112 /* FileVersion.swift in Sources */,
+				OBJ_113 /* FileVersions.swift in Sources */,
+				OBJ_114 /* FilesList.swift in Sources */,
+				OBJ_115 /* FilesUploadResult.swift in Sources */,
+				OBJ_117 /* ModelError.swift in Sources */,
+				OBJ_118 /* ObjectExist.swift in Sources */,
+				OBJ_119 /* StorageExist.swift in Sources */,
+				OBJ_120 /* StorageFile.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		OBJ_123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = D9CDDFE42301920B00FACAF0 /* PBXContainerItemProxy */;
+		};
+		OBJ_134 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AsposeHtmlCloud::AsposeHtmlCloudTests" /* AsposeHtmlCloudTests */;
+			targetProxy = D9CDDFE72301923200FACAF0 /* PBXContainerItemProxy */;
+		};
+		OBJ_146 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "AsposeHtmlCloud::AsposeHtmlCloud" /* AsposeHtmlCloud */;
+			targetProxy = D9CDDFE52301920B00FACAF0 /* PBXContainerItemProxy */;
+		};
+		OBJ_147 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "Alamofire::Alamofire" /* Alamofire */;
+			targetProxy = D9CDDFE62301920B00FACAF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		OBJ_126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Users/ingress/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_127 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Users/ingress/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		OBJ_133 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		OBJ_137 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AsposeHtmlCloud.xcodeproj/AsposeHtmlCloudTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = AsposeHtmlCloudTests;
+			};
+			name = Debug;
+		};
+		OBJ_138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AsposeHtmlCloud.xcodeproj/AsposeHtmlCloudTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = AsposeHtmlCloudTests;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "SWIFT_PACKAGE DEBUG";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				USE_HEADERMAP = NO;
+			};
+			name = Release;
+		};
+		OBJ_66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AsposeHtmlCloud.xcodeproj/Alamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Alamofire;
+			};
+			name = Debug;
+		};
+		OBJ_67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AsposeHtmlCloud.xcodeproj/Alamofire_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Alamofire;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = Alamofire;
+			};
+			name = Release;
+		};
+		OBJ_89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Users/ingress/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		OBJ_90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				LD = /usr/bin/true;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Users/ingress/Downloads/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		OBJ_95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AsposeHtmlCloud.xcodeproj/AsposeHtmlCloud_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AsposeHtmlCloud;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = AsposeHtmlCloud;
+			};
+			name = Debug;
+		};
+		OBJ_96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = AsposeHtmlCloud.xcodeproj/AsposeHtmlCloud_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = AsposeHtmlCloud;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = AsposeHtmlCloud;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		OBJ_125 /* Build configuration list for PBXNativeTarget "AsposeHtmlCloudPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_126 /* Debug */,
+				OBJ_127 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_131 /* Build configuration list for PBXAggregateTarget "AsposeHtmlCloudPackageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_132 /* Debug */,
+				OBJ_133 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_136 /* Build configuration list for PBXNativeTarget "AsposeHtmlCloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_137 /* Debug */,
+				OBJ_138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "AsposeHtmlCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_65 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_66 /* Debug */,
+				OBJ_67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_88 /* Build configuration list for PBXNativeTarget "AlamofirePackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_89 /* Debug */,
+				OBJ_90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_94 /* Build configuration list for PBXNativeTarget "AsposeHtmlCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_95 /* Debug */,
+				OBJ_96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = OBJ_1 /* Project object */;
+}
