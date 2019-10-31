@@ -852,7 +852,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
             self.saveFile(what: data, fileName: "convertToMhtmlByUrl.mht")
             expectation.fulfill()
         }
-        self.waitForExpectations(timeout: 1200.0, handler: nil)
+        self.waitForExpectations(timeout: 3600.0, handler: nil)
     }
 
     func testGetConvertDocumentToMarkdown() {
@@ -1186,168 +1186,6 @@ final class AsposeHtmlCloudTests: TestBaseCase {
         self.waitForExpectations(timeout: testTimeout, handler: nil)
     }
 
-        /*    Translation API tests    */
-
-    func testGetTranslateDocument() {
-        
-        let expectation = self.expectation(description: "testGetTranslateDocument")
-
-        let fileName = "test_en.html"
-        let urlTest = url(forResource: fileName)
-        
-        // Upload file to storage
-        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting/test_en.html", storageName: nil){(data, error) in
-            guard error == nil else {
-                XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
-                return
-            }
-
-            XCTAssertEqual(data!.uploaded!.count, 1)
-            XCTAssertEqual(data!.errors!.count, 0)
-
-            HtmlAPI.getTranslateDocument(name: "test_en.html", srcLang: "en", resLang: "fr", storage: nil, folder: "HtmlTesting") 
-            {(data, error) in
-                guard error == nil else {
-                    XCTFail("Error translate document. Error=\(error!.localizedDescription)")
-                    return
-                }
-                self.saveFile(what: data, fileName: "getTranslateEnToFr.html")
-                expectation.fulfill()
-            }
-        }
-        self.waitForExpectations(timeout: 1200.0, handler: nil)
-    }
-
-    func testGetTranslateDocumentByUrl() {
-    
-        let expectation = self.expectation(description: "testGetTranslateDocumentByUrl")
-
-        let url = "https://www.le.ac.uk/oerresources/bdra/html/page_02.htm"
-        
-        HtmlAPI.getTranslateDocumentByUrl(sourceUrl: url, srcLang: "en", resLang: "de")
-            {(data, error) in
-                guard error == nil else {
-                    XCTFail("Error translate document by url. Error=\(error!.localizedDescription)")
-                    return
-                }
-                self.saveFile(what: data, fileName: "getTranslateEnToDeByUrl.zip")
-                expectation.fulfill()
-            }
-        self.waitForExpectations(timeout: 1200.0, handler: nil)
-    }
-
-        /*    OCR API tests    */
-
-    func testGetRecognizeAndImportToHtml() {
-        
-        let expectation = self.expectation(description: "testGetRecognizeAndImportToHtml")
-
-        let fileName = "test_ocr.png"
-        let urlTest = url(forResource: fileName)
-        
-        // Upload file to storage
-        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting/test_ocr.png", storageName: nil){(data, error) in
-            guard error == nil else {
-                XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
-                return
-            }
-
-            XCTAssertEqual(data!.uploaded!.count, 1)
-            XCTAssertEqual(data!.errors!.count, 0)
-
-            HtmlAPI.getRecognizeAndImportToHtml(name: fileName, ocrEngineLang: "en", folder: "HtmlTesting", storage: nil) 
-            {(data, error) in
-                guard error == nil else {
-                    XCTFail("Error recognize document. Error=\(error!.localizedDescription)")
-                    return
-                }
-                self.saveFile(what: data, fileName: "getRecognize.html")
-                expectation.fulfill()
-            }
-        }
-        self.waitForExpectations(timeout: 300.0, handler: nil)
-    }
-
-    func testGetRecognizeAndTranslateToHtml() {
-        
-        let expectation = self.expectation(description: "testGetRecognizeAndTranslateToHtml")
-
-        let fileName = "test_ocr.jpg"
-        let urlTest = url(forResource: fileName)
-        
-        // Upload file to storage
-        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting/test_ocr.jpg", storageName: nil){(data, error) in
-            guard error == nil else {
-                XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
-                return
-            }
-
-            XCTAssertEqual(data!.uploaded!.count, 1)
-            XCTAssertEqual(data!.errors!.count, 0)
-
-            HtmlAPI.getRecognizeAndImportToHtml(name: fileName, ocrEngineLang: "en", folder: "HtmlTesting", storage: nil) 
-            {(data, error) in
-                guard error == nil else {
-                    XCTFail("Error recognize and translate document. Error=\(error!.localizedDescription)")
-                    return
-                }
-                self.saveFile(what: data, fileName: "getRecognizeAndTranslate.html")
-                expectation.fulfill()
-            }
-        }
-        self.waitForExpectations(timeout: 300.0, handler: nil)
-    }
-
-        /*    Summarization API tests    */
-
-    func testGetDetectHtmlKeywords() {
-        
-        let expectation = self.expectation(description: "testGetDetectHtmlKeywords")
-
-        let fileName = "test_en.html"
-        let urlTest = url(forResource: fileName)
-        
-        // Upload file to storage
-        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting/test_en.html", storageName: nil){(data, error) in
-            guard error == nil else {
-                XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
-                return
-            }
-
-            XCTAssertEqual(data!.uploaded!.count, 1)
-            XCTAssertEqual(data!.errors!.count, 0)
-
-            HtmlAPI.getDetectHtmlKeywords(name: "test_en.html", folder: "HtmlTesting", storage: nil) 
-            {(data, error) in
-                guard error == nil else {
-                    XCTFail("Error get keywords from document. Error=\(error!.localizedDescription)")
-                    return
-                }
-                self.saveFile(what: data, fileName: "getKeyword.json")
-                expectation.fulfill()
-            }
-        }
-        self.waitForExpectations(timeout: 300.0, handler: nil)
-    }
-
-    func testGetDetectHtmlKeywordsByUrl() {
-    
-        let expectation = self.expectation(description: "testGetDetectHtmlKeywordsByUrl")
-
-        let url = "https://www.le.ac.uk/oerresources/bdra/html/page_01.htm"
-        
-        HtmlAPI.getDetectHtmlKeywordsByUrl(sourceUrl: url)
-            {(data, error) in
-                guard error == nil else {
-                    XCTFail("Error get keywords by url. Error=\(error!.localizedDescription)")
-                    return
-                }
-                self.saveFile(what: data, fileName: "getKeywordByUrl.json")
-                expectation.fulfill()
-            }
-        self.waitForExpectations(timeout: 300.0, handler: nil)
-    }
-
     func testGetMergeHtmlTemplate(){
         
         let expectation = self.expectation(description: "testGetMergeHtmlTemplate")
@@ -1456,18 +1294,6 @@ final class AsposeHtmlCloudTests: TestBaseCase {
         ("testGetDocumentFragmentByXPathByUrl", testGetDocumentFragmentByXPathByUrl),
         ("testGetDocumentImagesByUrl", testGetDocumentImagesByUrl),
 
-        // Translation API
-        ("testGetTranslateDocument", testGetTranslateDocument),
-        ("testGetTranslateDocumentByUrl", testGetTranslateDocumentByUrl),
-
-        // OCR API
-        ("testGetRecognizeAndImportToHtml", testGetRecognizeAndImportToHtml),
-        ("testGetRecognizeAndTranslateToHtml", testGetRecognizeAndTranslateToHtml),
-
-        // Summarization API
-        ("testGetDetectHtmlKeywords", testGetDetectHtmlKeywords),
-        ("testGetDetectHtmlKeywordsByUrl", testGetDetectHtmlKeywordsByUrl),
-        
         // TemplateMergeApi
         ("testGetMergeHtmlTemplate", testGetMergeHtmlTemplate),
         ("testPostMergeHtmlTemplate", testPostMergeHtmlTemplate),

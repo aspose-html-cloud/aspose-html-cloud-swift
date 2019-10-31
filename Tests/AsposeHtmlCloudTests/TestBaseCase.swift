@@ -46,10 +46,10 @@ class TestBaseCase : XCTestCase {
         super.setUp()
         ClientAPI.setConfig(
 //            basePath: "https://localhost:5001/v3.0",
-            basePath: "https://api-qa.aspose.cloud/v3.0",
-            authPath: "https://api-qa.aspose.cloud/connect/token",
-            apiKey: "html.cloud",
-            appSID: "html.cloud",
+            basePath: "https://api.aspose.cloud/v3.0",
+            authPath: "https://api.aspose.cloud/connect/token",
+            apiKey: "c7ab7f6082d763f0bff521c2651f617c",
+            appSID: "692a1fd0-f5a3-4b39-b665-1716e283f2f4",
             debugging: true)
 
         //Create test directory (blocking!!!)

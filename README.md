@@ -67,12 +67,6 @@ Class | Method | HTTP request | Description
 *HtmlAPI* | [**getDocumentFragmentsByCSSSelectorByUrl**](docs/DocumentApi.md#getDocumentFragmentsByCSSSelectorByUrl) | **GET** /html/fragments/css/{outFormat} | Return list of HTML fragments matching the specified CSS selector by the source page URL.
 *HtmlAPI* | [**getDocumentImages**](docs/DocumentApi.md#getDocumentImages) | **GET** /html/{name}/images/all | Return all HTML document images packaged as a ZIP archive.
 *HtmlAPI* | [**getDocumentImagesByUrl**](docs/DocumentApi.md#getDocumentImagesByUrl) | **GET** /html/images/all | Return all HTML page images packaged as a ZIP archive by the source page URL.
-*HtmlAPI* | [**getRecognizeAndImportToHtml**](docs/OcrApi.md#getRecognizeAndImportToHtml) | **GET** /html/{name}/ocr/import | Recognize text from the image file in the storage and import it to HTML format.
-*HtmlAPI* | [**getRecognizeAndTranslateToHtml**](docs/OcrApi.md#getRecognizeAndTranslateToHtml) | **GET** /html/{name}/ocr/translate/{srcLang}/{resLang} | Recognize text from the image file in the storage, import it to HTML format and translate to specified language.
-*HtmlAPI* | [**getTranslateDocument**](docs/TranslationApi.md#getTranslateDocument) | **GET** /html/{name}/translate/{srcLang}/{resLang} | Translate the HTML document specified by the name from default or specified storage.
-*HtmlAPI* | [**getTranslateDocumentByUrl**](docs/TranslationApi.md#getTranslateDocumentByUrl) | **GET** /html/translate/{srcLang}/{resLang} | Translate the HTML document from Web specified by its URL.
-*HtmlAPI* | [**getDetectHtmlKeywords**](docs/SummarizationApi.md#getDetectHtmlKeywords) | **GET** /html/{name}/summ/keywords | Get the HTML document keywords using the keyword detection service.
-*HtmlAPI* | [**getDetectHtmlKeywordsByUrl**](docs/SummarizationApi.md#getDetectHtmlKeywordsByUrl) | **GET** /html/summ/keywords | Get the keywords from HTML document from Web specified by its URL using the keyword detection service
 *HtmlAPI* | [**getMergeHtmlTemplate**](docs/TemplateMergeApi.md#getMergeHtmlTemplate) | **GET** /html/{templateName}/merge | Populate HTML document template with data located as a file in the storage.
 *HtmlAPI* | [**postMergeHtmlTemplate**](docs/TemplateMergeApi.md#postMergeHtmlTemplate) | **POST** /html/{templateName}/merge | Populate HTML document template with data from the request body. Result document will be saved to storage.
 
