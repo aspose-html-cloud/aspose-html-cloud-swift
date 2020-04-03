@@ -61,7 +61,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
                     XCTFail("Error get convert html to image. Error=\(error!.localizedDescription)")
                     return
                 }
-                self.saveFile(what: data, fileName: "getHtmlToPng.png")
+                self.saveFile(what: data, fileName: "getHtmlToPng.zip")
                 expectation.fulfill()
             }
         }
@@ -142,7 +142,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
                 XCTFail("Error get convert html to image by url. Error=\(error!.localizedDescription)")
                 return
             }
-            self.saveFile(what: data, fileName: "HtmlToBmpByUrl.bmp")
+            self.saveFile(what: data, fileName: "HtmlToBmpByUrl.zip")
             expectation.fulfill()
         }
         self.waitForExpectations(timeout: 1200.0, handler: nil)
@@ -367,7 +367,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
         let expectation = self.expectation(description: "testPostHtmlInRequestToImage")
         let fileName = "test1.html"
         let urlTest = url(forResource: fileName)
-        let resultName = "postHtmlToPngInReqSwift.png"
+        let resultName = "postHtmlToPngInReqSwift.zip"
     
         HtmlAPI.postConvertDocumentInRequestToImage(outPath: "HtmlTesting/" + resultName, outFormat: "png", file: urlTest, width: 800, height: 1000, leftMargin: 10, rightMargin: 10, topMargin: 10, bottomMargin: 10, resolution: 300) {(data, error) in
             guard error == nil else {
@@ -562,7 +562,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
 
             let name = "test1.html"
             let outFormat = "gif"
-            let resultName = "putHtmlToGifSwift.gif"
+            let resultName = "putHtmlToGifSwift.zip"
         
             HtmlAPI.putConvertDocumentToImage(name: name, outPath: "HtmlTesting/" + resultName, outFormat: outFormat, width: 800, height: 1000, leftMargin: 10, rightMargin: 10, topMargin: 10, bottomMargin: 10, resolution: 300, folder: "HtmlTesting", storage: nil) {(data, error) in
                 guard error == nil else {
@@ -630,7 +630,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
 
             let name = "Map-World.svg"
             let outFormat = "jpeg"
-            let resultName = "putEpubToJpegSwift.jpeg"
+            let resultName = "putSvgToJpegSwift.jpeg"
         
             HtmlAPI.putConvertDocumentToImage(name: name, outPath: "HtmlTesting/" + resultName, outFormat: outFormat, width: 800, height: 1000, leftMargin: 10, rightMargin: 10, topMargin: 10, bottomMargin: 10, resolution: 300, folder: "HtmlTesting", storage: nil) {(data, error) in
                 guard error == nil else {
