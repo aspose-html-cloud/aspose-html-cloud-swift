@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D1A79197-A0A3-4CA4-A431-23EF18344084"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0C4470BD-3F07-42EA-A99A-0FB76D0695CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "865"
+            endingLineNumber = "865"
+            landmarkName = "testGetSeoWarning()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8FE100E2-072C-402C-A8BD-C579AD5D8F5F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "866"
+            endingLineNumber = "866"
+            landmarkName = "testGetSeoWarning()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47442B09-0321-405B-907F-E3607BC8EAD3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "864"
+            endingLineNumber = "864"
+            landmarkName = "testGetSeoWarning()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "47442B09-0321-405B-907F-E3607BC8EAD3 - 12517de6c6cc59df"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AsposeHtmlCloudTests.AsposeHtmlCloudTests.testGetSeoWarning() -&gt; ()"
+                  moduleName = "AsposeHtmlCloudTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ingress/Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "864"
+                  endingLineNumber = "864"
+                  offsetFromSymbolStart = "176">
+               </Location>
+               <Location
+                  uuid = "47442B09-0321-405B-907F-E3607BC8EAD3 - 5e48ebecb918cde3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AsposeHtmlCloudTests.AsposeHtmlCloudTests.testGetSeoWarning() -&gt; ()"
+                  moduleName = "AsposeHtmlCloudTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ingress/Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "865"
+                  endingLineNumber = "865"
+                  offsetFromSymbolStart = "243">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F3AE3AFB-045F-4415-8E02-A4698F8FD217"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "869"
+            endingLineNumber = "869"
+            landmarkName = "testGetSeoWarning()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

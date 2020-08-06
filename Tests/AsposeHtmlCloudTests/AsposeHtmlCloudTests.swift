@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="AsposeHtmlCloudTest.swift">
- *  Copyright (c) 2019 Aspose.HTML for Cloud
+ *  Copyright (c) 2020 Aspose.HTML for Cloud
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -854,7 +854,41 @@ final class AsposeHtmlCloudTests: TestBaseCase {
         }
         self.waitForExpectations(timeout: 3600.0, handler: nil)
     }
+    
+    func testGetSeoWarning() {
 
+        let expectation = self.expectation(description: "testGetSeoWarning")
+
+        let url = "https://edition.cnn.com/"
+
+        HtmlAPI.getSeoWarning(addr: url) {(data, error) in
+            guard error == nil else {
+                XCTFail("Error get SEO warning from url. Error=\(error!.localizedDescription)")
+                return
+            }
+            self.saveFile(what: data, fileName: "SeoWarning.json")
+            expectation.fulfill()
+        }
+        self.waitForExpectations(timeout: 3600.0, handler: nil)
+    }
+    
+    func testGetHtmlWarning() {
+
+        let expectation = self.expectation(description: "testGetHtmlWarning")
+
+        let url = "https://edition.cnn.com/"
+
+        HtmlAPI.getHtmlWarning(url: url) {(data, error) in
+            guard error == nil else {
+                XCTFail("Error get HTML warning from url. Error=\(error!.localizedDescription)")
+                return
+            }
+            self.saveFile(what: data, fileName: "HtmlWarning.json")
+            expectation.fulfill()
+        }
+        self.waitForExpectations(timeout: 3600.0, handler: nil)
+    }
+    
     func testGetConvertDocumentToMarkdown() {
         
         let expectation = self.expectation(description: "testGetConvertDocumentToMarkdown")

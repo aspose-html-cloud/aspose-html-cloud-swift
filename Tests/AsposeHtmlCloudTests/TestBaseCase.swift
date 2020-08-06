@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="TestBaseCase.swift">
- *  Copyright (c) 2019 Aspose.HTML for Cloud
+ *  Copyright (c) 2020 Aspose.HTML for Cloud
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -45,11 +45,10 @@ class TestBaseCase : XCTestCase {
     override class func setUp(){
         super.setUp()
         ClientAPI.setConfig(
-//            basePath: "https://localhost:5001/v3.0",
             basePath: "https://api.aspose.cloud/v3.0",
             authPath: "https://api.aspose.cloud/connect/token",
-            apiKey: "c7ab7f6082d763f0bff521c2651f617c",
-            appSID: "692a1fd0-f5a3-4b39-b665-1716e283f2f4",
+            apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+            appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
             debugging: true)
 
         //Create test directory (blocking!!!)
@@ -98,7 +97,7 @@ class TestBaseCase : XCTestCase {
         do{
             _ = try data!.write(to: pathFile)
         }catch{
-            print("Error save file.")
+            print("Error save file.\(error)")
         }
     }
 	

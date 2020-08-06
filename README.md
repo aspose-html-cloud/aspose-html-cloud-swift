@@ -10,8 +10,8 @@ The complete source code is available in this repository folder, you can either 
 ## Requirements
 - mac OS X 10.12.6
 - XCode 9.2
-- Swift 4.0 and later   
-- Alamofire 4.7.3 and later
+- Swift 5.1 and later   
+- Alamofire 4.9.1 and later
 
 ### Prerequisites
 
@@ -69,6 +69,9 @@ Class | Method | HTTP request | Description
 *HtmlAPI* | [**getDocumentImagesByUrl**](docs/DocumentApi.md#getDocumentImagesByUrl) | **GET** /html/images/all | Return all HTML page images packaged as a ZIP archive by the source page URL.
 *HtmlAPI* | [**getMergeHtmlTemplate**](docs/TemplateMergeApi.md#getMergeHtmlTemplate) | **GET** /html/{templateName}/merge | Populate HTML document template with data located as a file in the storage.
 *HtmlAPI* | [**postMergeHtmlTemplate**](docs/TemplateMergeApi.md#postMergeHtmlTemplate) | **POST** /html/{templateName}/merge | Populate HTML document template with data from the request body. Result document will be saved to storage.
+*HtmlAPI* | [**getSeoWarning**](docs/SeoApi.md#getSeoWarning) | **GET** /html/seo | Page analysis and return SEO warnings in json format.
+*HtmlAPI* | [**getHtmlWarning**](docs/SeoApi.md#getHtmlWarning) | **GET** /html/validator | Checks the markup validity of Web documents in HTML, XHTML, etc.and return in json format.
+
 
 ## Documentation For Authorization
 

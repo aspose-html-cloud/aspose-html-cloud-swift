@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="HtmlAPI.swift">
- *  Copyright (c) 2019 Aspose.HTML for Cloud
+ *  Copyright (c) 2020 Aspose.HTML for Cloud
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1065,6 +1065,80 @@ open class HtmlAPI {
         return requestBuilder.init(method: "PUT", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
     }
 
+
+    
+    
+    
+    
+    
+    /**
+     Page analysis and return of SEO warnings.
+
+     - parameter addr: (query) Source page URL.
+     - parameter completion: completion handler to receive the data and the error objects
+     */
+    public class func getSeoWarning(addr: String, completion: @escaping ((_ data: Data?, _ error: Error?) -> Void)) {
+        getSeoWarningWithRequestBuilder(addr: addr).execute { (response, error) -> Void in
+            completion(response?.body, error);
+        }
+    }
+    /**
+     Page analysis and return of SEO warnings resulting file (json format) in response content.
+     - GET /html/seo
+
+     - parameter addr: (query) Source page URL.
+
+     - returns: RequestBuilder<Data>
+     */
+    public class func getSeoWarningWithRequestBuilder( addr: String) -> RequestBuilder<Data> {
+        let path = "/html/seo"
+        let URLString = ClientAPI.basePath + path
+
+        let parameters: [String:Any]? = nil
+        let url = NSURLComponents(string: URLString)
+        url?.queryItems = APIHelper.mapValuesToQueryItems(values:[
+            "addr": addr
+        ])
+        
+        let requestBuilder: RequestBuilder<Data>.Type = ClientAPI.requestBuilderFactory.getBuilder()
+
+        return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
+    }
+    
+    /**
+     Checks the markup validity of web documents in html, xhtml formats.
+
+     - parameter url: (query) Source page URL.
+     - parameter completion: completion handler to receive the data and the error objects
+     */
+    public class func getHtmlWarning(url: String, completion: @escaping ((_ data: Data?, _ error: Error?) -> Void)) {
+        getHtmlWarningWithRequestBuilder(sourceUrl: url).execute { (response, error) -> Void in
+            completion(response?.body, error);
+        }
+    }
+    /**
+     Checks the makup validity of web documents in html, xhtml formats and return resulting file (json format) in response content.
+     - GET /html/validator
+
+     - parameter url: (query) Source page URL.
+
+     - returns: RequestBuilder<Data>
+     */
+    public class func getHtmlWarningWithRequestBuilder( sourceUrl: String) -> RequestBuilder<Data> {
+        let path = "/html/validator"
+        let URLString = ClientAPI.basePath + path
+
+        let parameters: [String:Any]? = nil
+        let url = NSURLComponents(string: URLString)
+        url?.queryItems = APIHelper.mapValuesToQueryItems(values:[
+            "url": sourceUrl
+        ])
+        
+        let requestBuilder: RequestBuilder<Data>.Type = ClientAPI.requestBuilderFactory.getBuilder()
+
+        return requestBuilder.init(method: "GET", URLString: (url?.string ?? URLString), parameters: parameters, isBody: false)
+    }
+    
     /**
      Return all HTML page with linked resources packaged as a ZIP archive by the source page URL.
 

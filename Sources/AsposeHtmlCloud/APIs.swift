@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="APIs.swift">
- *  Copyright (c) 2019 Aspose.HTML for Cloud
+ *  Copyright (c) 2020 Aspose.HTML for Cloud
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -85,6 +85,10 @@ open class ClientAPI {
             }
             
             ClientAPI.customHeaders["Authorization"] = "Bearer " + js.accessToken
+            
+            // Add identity headers to SDK
+            ClientAPI.customHeaders["x-aspose-client"] = "aspose.html-cloud swift sdk"
+            ClientAPI.customHeaders["x-aspose-client-version"] = "20.8.0"
 
             ds.signal()
         })
