@@ -45,10 +45,11 @@ class TestBaseCase : XCTestCase {
     override class func setUp(){
         super.setUp()
         ClientAPI.setConfig(
-            basePath: "https://api.aspose.cloud/v3.0",
-            authPath: "https://api.aspose.cloud/connect/token",
-            apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+//            basePath: "http://localhost:5000/v3.0",
+            basePath: "https://api-qa.aspose.cloud/v3.0",
+            authPath: "https://api-qa.aspose.cloud/connect/token",
+            apiKey: "html.cloud",
+            appSID: "html.cloud",
             debugging: true)
 
         //Create test directory (blocking!!!)
