@@ -53,15 +53,24 @@ To use Aspose HTML for Cloud SDK you need to register an account with [Aspose Cl
 
 Before create configuration, then use HtmlAPI or StorageAPI (see tests)   
 
-Example:   
+## Convert HTML to PNG in Swift
+
 ```swift
-    ClientAPI.setConfig(
-        basePath: "https://api.aspose.cloud/v3.0",
-        authPath: "https://api.aspose.cloud/connect/token",
-        apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-        appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
-        debugging: true
-    )
+	// Get your ClientId and ClientSecret from https://dashboard.aspose.cloud (free registration required).
+
+	ClientAPI.setConfig(
+			appSID: "MY_CLIENT_ID",
+			apiKey: "MY_CLIENT_SECRET",
+			basePath: "https://api.aspose.cloud/v3.0",
+			authPath: "https://api.aspose.cloud/connect/token",
+			debugging: true
+		)
+			
+	// Convert html page to PNG
+	let name = "testSwift.html"
+	let outFormat = "png"
+	
+	let HtmlAPI.getConvertDocumentToImage(name: name, outFormat: outFormat, width: 800, height: 1000, leftMargin: 10, rightMargin: 10, topMargin: 20, bottomMargin: 20, resolution: 300, folder: "HtmlTesting", storage: nil)
 ```
 
 ## Documentation for API Endpoints
@@ -145,12 +154,12 @@ Class | Method | HTTP request | Description
  - [FileVersion](docs/FileVersion.md)
  - [FileVersions](docs/FileVersions.md)
  - [ModelError](docs/ModelError.md)
- - [ObjectExist](docs/ObjectExist.md)
+ - [ObjectExist](docs/ObjectExists.md)
  - [StorageExist](docs/StorageExist.md)
  - [StorageFile](docs/StorageFile.md)
 
 
-[Tests](./Tests/AsposeHtmlTests/) contain various examples of using the Aspose.HTML and Aspose.Storage SDK.
+[Tests](https://github.com/aspose-html-cloud/aspose-html-cloud-swift/tree/master/Tests) contain various examples of using the Aspose.HTML and Aspose.Storage SDK.
 
 ## Aspose.HTML Cloud SDKs in Popular Languages
 
