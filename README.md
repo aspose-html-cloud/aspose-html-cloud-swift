@@ -161,6 +161,14 @@ Class | Method | HTTP request | Description
 
 [Tests](https://github.com/aspose-html-cloud/aspose-html-cloud-swift/tree/master/Tests) contain various examples of using the Aspose.HTML and Aspose.Storage SDK.
 
+## Workflow
+
+In order to make changes in the repository, you need to:
+
+1. Create a branch with the proposed changes whose name matches the feature/* pattern.
+2. Create a pull request for this branch. It will be automatically assigned to a suitable reviewer.
+3. Once the request is approved, it can be merged.
+
 ## Aspose.HTML Cloud SDKs in Popular Languages
 
 | .NET | Java | PHP | Python | Ruby | Node.js | Android | Swift|C++|Go|
