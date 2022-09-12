@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="AsposeStorageCloudTests.swift">
- *  Copyright (c) 2020 Aspose.HTML for Cloud
+ *  Copyright (c) 2022 Aspose.HTML for Cloud
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -45,7 +45,7 @@ final class AsposeStorageCloudTests: TestBaseCase {
                 XCTFail("Error get discUsage. Error=\(error!.localizedDescription)")
                 return
             }
-
+	
             XCTAssertTrue(data!.totalSize > 0)
             XCTAssertTrue(data!.usedSize > 0)
             expectation.fulfill()
@@ -111,35 +111,6 @@ final class AsposeStorageCloudTests: TestBaseCase {
         self.waitForExpectations(timeout: testTimeout, handler: nil)
     }
 
-    func testGetFileVersions() {
-        
-        let expectation = self.expectation(description: "Test is get list file versions")
-        
-        let fileName = "test1.html"
-        
-        let urlTest = url(forResource: fileName)
-        
-        //Create files in storage
-        
-        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting/test1.html", storageName: nil){(data, error) in
-            guard error == nil else {
-                XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
-                return
-            }
-
-            XCTAssertEqual(data!.uploaded!.count, 1)
-            XCTAssertEqual(data!.errors!.count, 0)
-
-            StorageAPI.getFileVersions(path: "HtmlTesting/test1.html", storageName: nil) {(data, error) in
-                guard error == nil else {
-                    XCTFail("Error get list file versions. Error=\(error!.localizedDescription)")
-                    return
-                }
-                expectation.fulfill()
-            }
-        }
-        self.waitForExpectations(timeout: 500.0, handler: nil)
-    }
 
     /*   File API test   */
 
@@ -151,7 +122,7 @@ final class AsposeStorageCloudTests: TestBaseCase {
         
         let urlTest = url(forResource: fileName)
         
-        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting/test_download.jpg", storageName: nil) {(data, error) in
+        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting", storageName: nil) {(data, error) in
             guard error == nil else {
                 XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
                 return
@@ -174,7 +145,7 @@ final class AsposeStorageCloudTests: TestBaseCase {
         let urlTest = url(forResource: fileName)
         
          // Upload test file to storage
-        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting/test.txt", storageName: nil) {(data, error) in
+        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting", storageName: nil) {(data, error) in
             guard error == nil else {
                 XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
                 return
@@ -183,7 +154,7 @@ final class AsposeStorageCloudTests: TestBaseCase {
             XCTAssertEqual(data!.uploaded!.count, 1)
             XCTAssertEqual(data!.errors!.count, 0)
 
-            StorageAPI.deleteFile(path: "HtmlTesting/test.txt") {(data, error) in
+            StorageAPI.deleteFile(path: "HtmlTesting/\(fileName)") {(data, error) in
                 guard error == nil else {
                     XCTFail("Error delete file. Error=\(error!.localizedDescription)")
                     return
@@ -202,7 +173,7 @@ final class AsposeStorageCloudTests: TestBaseCase {
         
         let urlTest = url(forResource: fileName)
 
-        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting/test_download.jpg", storageName: nil) {(data, error) in
+        StorageAPI.uploadFile(file: urlTest, path: "/", storageName: nil) {(data, error) in
             guard error == nil else {
                 XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
                 return
@@ -211,7 +182,7 @@ final class AsposeStorageCloudTests: TestBaseCase {
             XCTAssertEqual(data!.uploaded!.count, 1)
             XCTAssertEqual(data!.errors!.count, 0)
 
-            StorageAPI.downloadFile(path: "HtmlTesting/test_download.jpg", storageName: nil, versionId: nil) {(data, error) in
+            StorageAPI.downloadFile(path: fileName, storageName: nil, versionId: nil) {(data, error) in
                 guard error == nil else {
                     XCTFail("Error download file. Error=\(error!.localizedDescription)")
                     return
@@ -222,48 +193,6 @@ final class AsposeStorageCloudTests: TestBaseCase {
             }
         }
         self.waitForExpectations(timeout: 300.0, handler: nil)
-    }
-
-    func testCopyFile(){
-        
-        let expectation = self.expectation(description: "Test copy file")
-
-        let fileName = "test1.html"
-        
-        let urlTest = url(forResource: fileName)
-
-        StorageAPI.uploadFile(file: urlTest, path: "HtmlTesting/test1.html", storageName: nil) {(data, error) in
-            guard error == nil else {
-                XCTFail("Error uploadFile. Error=\(error!.localizedDescription)")
-                return
-            }
-            
-            XCTAssertEqual(data!.uploaded!.count, 1)
-            XCTAssertEqual(data!.errors!.count, 0)
-        
-            StorageAPI.copyFile(srcPath: "HtmlTesting/test1.html", destPath: "HtmlTesting/test_copyed.html", srcStorageName: nil, destStorageName: nil, versionId: nil) {(data, error) in
-                guard error == nil else {
-                    XCTFail("Error copy file. Error=\(error!.localizedDescription)")
-                    return
-                }
-                expectation.fulfill()
-            }
-        }
-        self.waitForExpectations(timeout: testTimeout, handler: nil)
-    }
-    
-    func testMoveFile(){
-        
-        let expectation = self.expectation(description: "Test move file")
-        
-        StorageAPI.moveFile(srcPath: "HtmlTesting/test1.html", destPath: "HtmlTesting/test_moved.html", srcStorageName: nil, destStorageName: nil, versionId: nil) {(data, error) in
-            guard error == nil else {
-                XCTFail("Error moved file. Error=\(error!.localizedDescription)")
-                return
-            }
-            expectation.fulfill()
-        }
-        self.waitForExpectations(timeout: testTimeout, handler: nil)
     }
 
     
@@ -297,49 +226,6 @@ final class AsposeStorageCloudTests: TestBaseCase {
         self.waitForExpectations(timeout: testTimeout, handler: nil)
     }
     
-    func testCopyFolder(){
-        
-        let expectation = self.expectation(description: "Test copy folder")
-
-        StorageAPI.createFolder(path: "HtmlTesting/TestSourceFolder", storageName: nil) {(data, error) in
-            guard error == nil else {
-                XCTFail("Error create folder. Error=\(error!.localizedDescription)")
-                return
-            }
-			
-			StorageAPI.copyFolder(srcPath: "HtmlTesting/TestSourceFolder", destPath: "HtmlTesting/MovedFolder") {(data, error) in
-				guard error == nil else {
-					XCTFail("Error copy folder. Error=\(error!.localizedDescription)")
-					return
-				}
-				
-				expectation.fulfill()
-			}
-        }
-        self.waitForExpectations(timeout: testTimeout, handler: nil)
-    }
-    
-    func testMoveFolder(){
-        
-        let expectation = self.expectation(description: "Test move folder")
-
-        StorageAPI.createFolder(path: "HtmlTesting/TestCreateFolder", storageName: nil) {(data, error) in
-            guard error == nil else {
-                XCTFail("Error create folder. Error=\(error!.localizedDescription)")
-                return
-            }
-			
-			StorageAPI.moveFolder(srcPath: "HtmlTesting/TestCreateFolder", destPath: "HtmlTesting/MovedFolder") {(data, error) in
-				guard error == nil else {
-					XCTFail("Error move folder. Error=\(error!.localizedDescription)")
-					return
-				}
-				expectation.fulfill()
-			}
-        }
-        self.waitForExpectations(timeout: testTimeout, handler: nil)
-    }
-
     func testGetFilesList(){
         
         let expectation = self.expectation(description: "Test get list files")
@@ -360,18 +246,13 @@ final class AsposeStorageCloudTests: TestBaseCase {
         ("testObjectExists_EXIST", testObjectExists_EXIST),
         ("testObjectExists_NOTEXIST", testObjectExists_NOTEXIST),
         ("testStorageExists_NOTEXIST", testStorageExists_NOTEXIST),
-        ("testGetFileVersions", testGetFileVersions),
         // File API
         ("testUploadFile", testUploadFile),
         ("testDownloadFile", testDownloadFile),
         ("testDeleteFile", testDeleteFile),
-        ("testCopyFile", testCopyFile),
-        ("testMoveFile", testMoveFile),
         //Folder API
         ("testCreateFolder", testCreateFolder),
         ("testDeleteFolder", testDeleteFolder),
-        ("testCopyFolder", testCopyFolder),
-        ("testMoveFolder", testMoveFolder),
         ("testGetFilesList", testGetFilesList),
     ]
 }

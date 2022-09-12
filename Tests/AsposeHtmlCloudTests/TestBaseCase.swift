@@ -1,7 +1,7 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
  * <copyright company="Aspose" file="TestBaseCase.swift">
- *  Copyright (c) 2020 Aspose.HTML for Cloud
+ *  Copyright (c) 2022 Aspose.HTML for Cloud
  * </copyright>
  * <summary>
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -34,7 +34,7 @@ import XCTest
 @available(OSX 10.12, *)
 class TestBaseCase : XCTestCase {
   
-    let testTimeout = 800.0
+    let testTimeout = 100.0
 
     static let fm = FileManager.default
     let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
@@ -45,10 +45,10 @@ class TestBaseCase : XCTestCase {
     override class func setUp(){
         super.setUp()
         ClientAPI.setConfig(
-            basePath: "https://api.aspose.cloud/v3.0",
+            basePath: "https://api.aspose.cloud/v4.0",
             authPath: "https://api.aspose.cloud/connect/token",
-            apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
-            appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX",
+            apiKey: "c8dda7d6445d82635b8797d1c8edd153",
+            appSID: "2225baa2-097b-4731-9831-d0d56c28230f",
             debugging: true)
 
         //Create test directory (blocking!!!)
@@ -88,6 +88,10 @@ class TestBaseCase : XCTestCase {
 
     func url(forResource fileName: String) -> URL {
         return resourceDir.appendingPathComponent(fileName)
+    }
+    
+    func fileExist(name: String) -> Bool {
+        return FileManager.default.fileExists(atPath: name)
     }
     
     func saveFile(what data: Data?, fileName name: String) {

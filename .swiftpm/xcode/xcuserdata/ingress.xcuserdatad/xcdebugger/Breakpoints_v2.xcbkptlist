@@ -7,79 +7,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "0C4470BD-3F07-42EA-A99A-0FB76D0695CD"
+            uuid = "42F8B5EC-0833-4AEC-AB40-AD4E1FFFBC2C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "865"
-            endingLineNumber = "865"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "testLocalToLocalHtmlToDoc()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8FE100E2-072C-402C-A8BD-C579AD5D8F5F"
-            shouldBeEnabled = "No"
+            uuid = "00D2C62C-6E45-4E39-B3DD-16A5E9014CB1"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "866"
-            endingLineNumber = "866"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "HtmlAPI"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "47442B09-0321-405B-907F-E3607BC8EAD3"
+            uuid = "11801555-93BC-46DB-95D3-2CDEEA87E6A0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "864"
-            endingLineNumber = "864"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "135"
+            endingLineNumber = "135"
+            landmarkName = "convertUrlToLocal(src:dst:options:completion:)"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "47442B09-0321-405B-907F-E3607BC8EAD3 - 12517de6c6cc59df"
-                  shouldBeEnabled = "No"
+                  uuid = "11801555-93BC-46DB-95D3-2CDEEA87E6A0 - 1fc04d1dd90db87b"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "AsposeHtmlCloudTests.AsposeHtmlCloudTests.testGetSeoWarning() -&gt; ()"
+                  symbolName = "default argument 2 of static AsposeHtmlCloud.HtmlAPI.convertUrlToLocal(src: Swift.String, dst: Swift.String, options: Swift.Optional&lt;AsposeHtmlCloud.ConversionOptions&gt;, completion: (Swift.Optional&lt;AsposeHtmlCloud.ConversionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "AsposeHtmlCloudTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ingress/Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+                  urlString = "file:///Users/ingress/Documents/Aspose.HTML.Cloud.SDK.Swift/Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "864"
-                  endingLineNumber = "864"
-                  offsetFromSymbolStart = "176">
+                  startingLineNumber = "135"
+                  endingLineNumber = "135"
+                  offsetFromSymbolStart = "4">
                </Location>
                <Location
-                  uuid = "47442B09-0321-405B-907F-E3607BC8EAD3 - 5e48ebecb918cde3"
-                  shouldBeEnabled = "No"
+                  uuid = "11801555-93BC-46DB-95D3-2CDEEA87E6A0 - 3e72e6855052feca"
+                  shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AsposeHtmlCloudTests.AsposeHtmlCloudTests.testGetSeoWarning() -&gt; ()"
+                  symbolName = "static AsposeHtmlCloud.HtmlAPI.convertUrlToLocal(src: Swift.String, dst: Swift.String, options: Swift.Optional&lt;AsposeHtmlCloud.ConversionOptions&gt;, completion: (Swift.Optional&lt;AsposeHtmlCloud.ConversionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "AsposeHtmlCloudTests"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ingress/Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+                  urlString = "file:///Users/ingress/Documents/Aspose.HTML.Cloud.SDK.Swift/Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "865"
-                  endingLineNumber = "865"
-                  offsetFromSymbolStart = "243">
+                  startingLineNumber = "137"
+                  endingLineNumber = "137"
+                  offsetFromSymbolStart = "87">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -87,17 +87,241 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F3AE3AFB-045F-4415-8E02-A4698F8FD217"
+            uuid = "6D6F059B-22BE-4841-BD30-8505FD0B4AC1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "148"
+            endingLineNumber = "148"
+            landmarkName = "HtmlAPI"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9082C2F0-9CB4-4C99-A71A-F31B3741024D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
+            landmarkName = "convert(src:dst:srcInLocal:dstInLocal:isUrl:options:storage:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B79B16D8-F389-4133-BDF5-C1C7D28DD513"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "252"
+            endingLineNumber = "252"
+            landmarkName = "convert(src:dst:srcInLocal:dstInLocal:isUrl:options:storage:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C716CF40-E352-4322-8461-A6F32934BF8C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "254"
+            endingLineNumber = "254"
+            landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "09A50FED-D11D-4AB5-BED8-0AA5279553C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "332"
+            endingLineNumber = "332"
+            landmarkName = "checkStatus(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51A1E381-3D1F-4923-9247-753752B549C8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "361"
+            endingLineNumber = "361"
+            landmarkName = "checkStatus(id:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E88C517-FE3B-4BC3-A213-C90240E88EA4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "287"
+            endingLineNumber = "287"
+            landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BFE0996-86E3-4C0C-BC2E-5F6ED18F5587"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "281"
+            endingLineNumber = "281"
+            landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AD57FBC0-50D7-4D41-AA02-76617B1B63A2"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "869"
-            endingLineNumber = "869"
-            landmarkName = "unknown"
-            landmarkType = "0">
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "testLocalToLocalHtmlToDoc()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AD57FBC0-50D7-4D41-AA02-76617B1B63A2 - 88545177d0125896"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AsposeHtmlCloudTests.AsposeHtmlCloudTests.testConvert() -&gt; ()"
+                  moduleName = "AsposeHtmlCloudTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ingress/Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "862">
+               </Location>
+               <Location
+                  uuid = "AD57FBC0-50D7-4D41-AA02-76617B1B63A2 - 63d9e2229738a20f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;AsposeHtmlCloud.ConversionResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in AsposeHtmlCloudTests.AsposeHtmlCloudTests.testConvert() -&gt; ()"
+                  moduleName = "AsposeHtmlCloudTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ingress/Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "48"
+                  endingLineNumber = "48"
+                  offsetFromSymbolStart = "292">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FFC00EC6-DDAD-4822-A6D0-467CF8B414BF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/AsposeHtmlCloudTests/TestBaseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "url(forResource:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B093981C-C1FC-4B51-93AC-DE2D0E37C8F4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "265"
+            endingLineNumber = "265"
+            landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "84698DD9-A8A8-4B4E-B39B-C9E52D76BDE5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Tests/AsposeHtmlCloudTests/AsposeHtmlCloudTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "testLocalToLocalHtmlToDoc()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "57FEDC28-A566-4D63-A0CE-E6B9F97D49C3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "298"
+            endingLineNumber = "298"
+            landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

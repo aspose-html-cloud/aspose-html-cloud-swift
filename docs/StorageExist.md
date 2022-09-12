@@ -1,8 +1,8 @@
-# Asposehtmlcloud.StorageExist
+# StorageExist
 
-## Properties
-Name | Type | Description | Notes
------------- | ------------- | ------------- | -------------
-**exists** | **Bool** | Shows that the storage exists.              | 
+## Fields
+| Name       | Type     | Description                    | Notes |
+|------------|----------|--------------------------------|-------|
+| **exists** | **Bool** | Shows that the storage exists. |       | 
 
 
