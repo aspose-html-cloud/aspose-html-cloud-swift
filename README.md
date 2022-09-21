@@ -26,13 +26,47 @@ Before create configuration, then use HtmlAPI or StorageAPI (see tests)
 
 Example:   
 ```swift
-    ClientAPI.setConfig(
-        basePath: "https://api.aspose.cloud/v4.0", 
-        authPath: "https://api.aspose.cloud/connect/token", 
-        apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
-        appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
-        debugging: true
-    )
+import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
+
+static let fm = FileManager.default
+let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
+let resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/TestResult")
+
+func url(forResource fileName: String) -> URL {
+	return resourceDir.appendingPathComponent(fileName)
+}
+
+func fileExist(name: String) -> Bool {
+	return FileManager.default.fileExists(atPath: name)
+}
+
+ClientAPI.setConfig(
+	basePath: "https://api.aspose.cloud/v4.0", 
+	authPath: "https://api.aspose.cloud/connect/token", 
+	apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+	appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+	debugging: true
+)
+
+let fileName = "test1.html"
+let src = url(forResource: fileName).absoluteString
+
+let expectation = self.expectation(description: "testConvert to \(format)")
+let dst = resultDir.appendingPathComponent("LocToLocDoc.\(format)").absoluteString
+HtmlAPI.convertLocalToLocal(src: src, dst: dst, options: nil) { (data, error) in
+
+	guard error == nil else {
+		XCTFail("Error get convert html to \(format)). Error=\(error!.localizedDescription)")
+		return
+	}
+	let resultPath = data!.file!
+	XCTAssertTrue(fileExist(name: resultPath))
+	expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
 ```
 
 ## Documentation for API Endpoints
