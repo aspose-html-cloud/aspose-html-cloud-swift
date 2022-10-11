@@ -23,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "00D2C62C-6E45-4E39-B3DD-16A5E9014CB1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
-            landmarkName = "HtmlAPI"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "11801555-93BC-46DB-95D3-2CDEEA87E6A0"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -272,7 +256,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "url(forResource:)"
+            landmarkName = "fileExist(name:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

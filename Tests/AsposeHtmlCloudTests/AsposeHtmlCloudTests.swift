@@ -56,6 +56,31 @@ final class AsposeHtmlCloudTests: TestBaseCase {
         }
     }
 
+    func testLocalToLocalHtmlToDocWithOptions() {
+        let formats = ["pdf", "xps", "docx"]
+
+        let fileName = "test1.html"
+        let src = url(forResource: fileName).absoluteString
+        let options_A4 = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2, rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
+
+        for format in formats {
+            let expectation = self.expectation(description: "testConvert to \(format)")
+            let dst = resultDir.appendingPathComponent("LocToLocDocWithOpt.\(format)").absoluteString
+            HtmlAPI.convertLocalToLocal(src: src, dst: dst, options: options_A4) { (data, error) in
+
+                guard error == nil else {
+                    XCTFail("Error get convert html to \(format)). Error=\(error!.localizedDescription)")
+                    return
+                }
+                let resultPath = data!.file!
+                XCTAssertTrue(self.fileExist(name: resultPath))
+                expectation.fulfill()
+            }
+            self.waitForExpectations(timeout: testTimeout, handler: nil)
+        }
+    }
+
+    
     func testLocalToLocalHtmlToImage() {
         let formats = ["jpeg", "jpg", "bmp", "png", "tiff", "tif", "gif"]
 

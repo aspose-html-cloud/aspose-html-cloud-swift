@@ -31,26 +31,26 @@ import Foundation
 public struct ConversionOptions: Codable {
 
 
-    /** Width in pixels. */
-    public var width: UInt32?
+    /** Width in pixels for images and inches for PDF, XPS, DOCX formats. */
+    public var width: Float32?
 
-    /** Height in pixels. */
-    public var height: UInt32?
+    /** Height in pixels and inches for PDF, XPS, DOCX formats.  */
+    public var height: Float32?
     
-    /** Left margin in pixels. */
-    public var leftMargin: UInt32?
+    /** Left margin in pixels and inches for PDF, XPS, DOCX formats.  */
+    public var leftMargin: Float32?
     
-    /** Right margin in pixels. */
-    public var rightMargin: UInt32?
+    /** Right margin in pixels and inches for PDF, XPS, DOCX formats.  */
+    public var rightMargin: Float32?
 
-    /** Top margin in pixels. */
-    public var topMargin: UInt32?
+    /** Top margin in pixels and inches for PDF, XPS, DOCX formats.  */
+    public var topMargin: Float32?
 
-    /** Bottom margin in pixels. */
-    public var bottomMargin: UInt32?
+    /** Bottom margin in pixels and inches for PDF, XPS, DOCX formats.  */
+    public var bottomMargin: Float32?
 
-    public init(width: UInt32?, height: UInt32?, leftMargin: UInt32?,
-                rightMargin: UInt32?, topMargin: UInt32?, bottomMargin: UInt32?) {
+    public init(width: Float32?, height: Float32?, leftMargin: Float32?,
+                rightMargin: Float32?, topMargin: Float32?, bottomMargin: Float32?) {
         self.width = width
         self.height = height
         self.leftMargin = leftMargin

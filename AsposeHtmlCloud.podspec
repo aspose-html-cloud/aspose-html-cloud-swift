@@ -3,8 +3,8 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.osx.deployment_target = '10.11'
   s.tvos.deployment_target = '9.0'
-  s.version = '22.9.1'
-  s.source = { :git => 'https://github.com/aspose-html-cloud/aspose-html-cloud-swift.git', :tag => 'v22.9.1' }
+  s.version = '22.10.1'
+  s.source = { :git => 'https://github.com/aspose-html-cloud/aspose-html-cloud-swift.git', :tag => 'v22.10.1' }
   s.authors = { 'Alexander Makogon' => 'alexander.makogon@aspose.com' }
   s.license = 'MIT'
   s.homepage = 'https://products.aspose.com/html'

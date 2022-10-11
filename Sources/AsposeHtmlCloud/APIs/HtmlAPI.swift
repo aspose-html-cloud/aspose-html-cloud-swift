@@ -37,12 +37,12 @@ open class HtmlAPI {
      - parameter src: (String) Full path to the source file on a local disk.
      - parameter dst: (String) Full path to the result file on a local disk.
      - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (UInt32?) Resulting width in pixels. (optional)
-     - parameter options.height: (UInt32?) Resulting height in pixels. (optional)
-     - parameter options.leftMargin: (UInt32?) Left margin in pixels. (optional)
-     - parameter options.rightMargin: (UInt32?) Right margin in pixels. (optional)
-     - parameter options.topMargin: (UInt32?) Top margin in pixels. (optional)
-     - parameter options.bottomMargin: (UInt32?) Bottom margin in pixels. (optional)
+     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
      */
     open class func convertLocalToLocal(src: String, dst: String, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
@@ -59,12 +59,12 @@ open class HtmlAPI {
      - parameter dst: (String) Full path to the result file on a storage.
      - parameter storage: (String?) User's storage. (optional)
      - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (UInt32?) Resulting width in pixels. (optional)
-     - parameter options.height: (UInt32?) Resulting height in pixels. (optional)
-     - parameter options.leftMargin: (UInt32?) Left margin in pixels. (optional)
-     - parameter options.rightMargin: (UInt32?) Right margin in pixels. (optional)
-     - parameter options.topMargin: (UInt32?) Top margin in pixels. (optional)
-     - parameter options.bottomMargin: (UInt32?) Bottom margin in pixels. (optional)
+     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
      */
     open class func convertLocalToStorage(src: String, dst: String, storage: String?, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
@@ -81,12 +81,12 @@ open class HtmlAPI {
      - parameter dst: (String) Full path to the result file on a local disk.
      - parameter storage: (String?) User's storage. (optional)
      - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (UInt32?) Resulting width in pixels. (optional)
-     - parameter options.height: (UInt32?) Resulting height in pixels. (optional)
-     - parameter options.leftMargin: (UInt32?) Left margin in pixels. (optional)
-     - parameter options.rightMargin: (UInt32?) Right margin in pixels. (optional)
-     - parameter options.topMargin: (UInt32?) Top margin in pixels. (optional)
-     - parameter options.bottomMargin: (UInt32?) Bottom margin in pixels. (optional)
+     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
      */
     open class func convertStorageToLocal(src: String, dst: String, storage: String?, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
@@ -103,12 +103,12 @@ open class HtmlAPI {
      - parameter dst: (String) Full path to the result file on a storage.
      - parameter storage: (String?) User's storage. (optional)
      - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (UInt32?) Resulting width in pixels. (optional)
-     - parameter options.height: (UInt32?) Resulting height in pixels. (optional)
-     - parameter options.leftMargin: (UInt32?) Left margin in pixels. (optional)
-     - parameter options.rightMargin: (UInt32?) Right margin in pixels. (optional)
-     - parameter options.topMargin: (UInt32?) Top margin in pixels. (optional)
-     - parameter options.bottomMargin: (UInt32?) Bottom margin in pixels. (optional)
+     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
      */
     open class func convertStorageToStorage(src: String, dst: String, storage: String?, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
@@ -124,12 +124,12 @@ open class HtmlAPI {
      - parameter src: (String) Web address.
      - parameter dst: (String) Full path to the result file on a local disk.
      - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (UInt32?) Resulting width in pixels. (optional)
-     - parameter options.height: (UInt32?) Resulting height in pixels. (optional)
-     - parameter options.leftMargin: (UInt32?) Left margin in pixels. (optional)
-     - parameter options.rightMargin: (UInt32?) Right margin in pixels. (optional)
-     - parameter options.topMargin: (UInt32?) Top margin in pixels. (optional)
-     - parameter options.bottomMargin: (UInt32?) Bottom margin in pixels. (optional)
+     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
      */
     open class func convertUrlToLocal(src: String, dst: String, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
@@ -146,12 +146,12 @@ open class HtmlAPI {
      - parameter dst: (String) Full path to the result file on a storage.
      - parameter storage: (String?) User's storage. (optional)
      - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (UInt32?) Resulting width in pixels. (optional)
-     - parameter options.height: (UInt32?) Resulting height in pixels. (optional)
-     - parameter options.leftMargin: (UInt32?) Left margin in pixels. (optional)
-     - parameter options.rightMargin: (UInt32?) Right margin in pixels. (optional)
-     - parameter options.topMargin: (UInt32?) Top margin in pixels. (optional)
-     - parameter options.bottomMargin: (UInt32?) Bottom margin in pixels. (optional)
+     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
      */
     open class func convertUrlToStorage(src: String, dst: String, storage: String?, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
@@ -170,12 +170,12 @@ open class HtmlAPI {
      - parameter dstInLocal: (Bool) Save result to a local disk.
      - parameter isUrl: (Bool) Source is URL.
      - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (UInt32?) Resulting width in pixels. (optional)
-     - parameter options.height: (UInt32?) Resulting height in pixels. (optional)
-     - parameter options.leftMargin: (UInt32?) Left margin in pixels. (optional)
-     - parameter options.rightMargin: (UInt32?) Right margin in pixels. (optional)
-     - parameter options.topMargin: (UInt32?) Top margin in pixels. (optional)
-     - parameter options.bottomMargin: (UInt32?) Bottom margin in pixels. (optional)
+     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
+     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter storage: (String?) User's storage. (optional)
      - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
      */
