@@ -1,13 +1,13 @@
 
 # Richard Stallman's personal site.
-## [https://stallman.org](/)
+## [https://stallman.org](https://stallman.org/)
 &#10;For current political commentary, see
 the [daily
-political notes](/archives/polnotes.html).
+political notes](https://stallman.org/archives/polnotes.html).
 
 
-&#10;[RMS's Bio](/biographies.html#serious) |
-[The GNU Project](http://gnu.org)
+&#10;[RMS's Bio](https://stallman.org/biographies.html#serious) |
+[The GNU Project](http://gnu.org/)
 
 
 - - -

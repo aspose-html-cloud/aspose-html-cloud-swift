@@ -37,18 +37,22 @@ class TestBaseCase : XCTestCase {
     let testTimeout = 100.0
 
     static let fm = FileManager.default
-    let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
+    let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/aspose-html-cloud-swift/Tests/AsposeHtmlCloudTests/Resources")
 
-    var resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/TestResult")
+    var resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/aspose-html-cloud-swift/Tests/AsposeHtmlCloudTests/TestResult")
     
     //Call once
     override class func setUp(){
         super.setUp()
         ClientAPI.setConfig(
-            basePath: "https://api.aspose.cloud/v4.0",
-            authPath: "https://api.aspose.cloud/connect/token",
-            apiKey: "c8dda7d6445d82635b8797d1c8edd153",
-            appSID: "2225baa2-097b-4731-9831-d0d56c28230f",
+//            basePath: "https://api.aspose.cloud/v4.0",
+//            authPath: "https://api.aspose.cloud/connect/token",
+//            apiKey: "c8dda7d6445d82635b8797d1c8edd153",
+//            appSID: "2225baa2-097b-4731-9831-d0d56c28230f",
+            basePath: "http://10.0.2.2:5000/v4.0",
+            authPath: "https://api-qa.aspose.cloud/connect/token",
+            apiKey: "html.cloud",
+            appSID: "html.cloud",
             debugging: true)
 
         //Create test directory (blocking!!!)

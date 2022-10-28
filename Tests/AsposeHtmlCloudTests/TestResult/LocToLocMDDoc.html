@@ -1,0 +1,198 @@
+<html><head></head><body><h1>Aspose HTML Cloud SDK</h1>
+<p>This repository contains Aspose.HTML Cloud SDK source code. This SDK allows you to work with Aspose.HTML Cloud REST APIs in your applications quickly and easily.</p>
+<p>See <a href="https://apireference.aspose.cloud/html/">API Reference</a> for full API specification.</p>
+<h2>How to use the SDK?</h2>
+<p>The complete source code is available in this repository folder, you can either directly use it in your project.</p>
+<h2>Requirements</h2>
+<ul>
+<li>mac OS X 10.12.6</li>
+<li>XCode 9.2</li>
+<li>Swift 5.1 and later</li>
+<li>Alamofire 4.9.1 and later</li>
+</ul>
+<h3>Prerequisites</h3>
+<p>To use Aspose HTML for Cloud SDK you need to register an account with <a href="https://www.aspose.cloud/">Aspose Cloud</a> and lookup/create App Key and SID at <a href="https://dashboard.aspose.cloud/#/apps">Cloud Dashboard</a>. There is free quota available. For more details, see <a href="https://purchase.aspose.cloud/pricing">Aspose Cloud Pricing</a>.</p>
+<h2>Installation &amp; Usage</h2>
+<h2>Getting Started</h2>
+<p>Before create configuration, then use HtmlAPI or StorageAPI (see tests)</p>
+<h3>Possible conversions:</h3>
+<ul>
+<li>HTML -&gt; PDF, XPS, DOCX, MD, MHTML, JPEG, BMP, PNG, GIF, TIFF</li>
+<li>EPUB -&gt; PDF, XPS, DOCX, JPEG, BMP, PNG, GIF, TIFF</li>
+<li>MD -&gt; PDF, XPS, DOCX, HTML, MHTML, JPEG, BMP, PNG, GIF, TIFF</li>
+<li>MHTML -&gt; PDF, XPS, DOCX, JPEG, BMP, PNG, GIF, TIFF</li>
+</ul>
+<p>Example:</p>
+<pre><code class="language-swift">import Alamofire
+import Foundation
+import XCTest
+import AsposeHtmlCloud
+
+static let fm = FileManager.default
+let resourceDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/Resources")
+let resultDir = fm.homeDirectoryForCurrentUser.appendingPathComponent("Documents/Aspose.HTML.Cloud.SDK.Swift/Tests/AsposeHtmlCloudTests/TestResult")
+
+func url(forResource fileName: String) -&gt; URL {
+ return resourceDir.appendingPathComponent(fileName)
+}
+
+func fileExist(name: String) -&gt; Bool {
+ return FileManager.default.fileExists(atPath: name)
+}
+
+ClientAPI.setConfig(
+ basePath: "https://api.aspose.cloud/v4.0", 
+ authPath: "https://api.aspose.cloud/connect/token", 
+ apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX", 
+ appSID: "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX", 
+ debugging: true
+)
+
+let fileName = "test1.html"
+let src = url(forResource: fileName).absoluteString
+
+let expectation = self.expectation(description: "testConvert to \(format)")
+let dst = resultDir.appendingPathComponent("LocToLocDoc.\(format)").absoluteString
+HtmlAPI.convertLocalToLocal(src: src, dst: dst, options: nil) { (data, error) in
+
+ guard error == nil else {
+  XCTFail("Error get convert html to \(format)). Error=\(error!.localizedDescription)")
+  return
+ }
+ let resultPath = data!.file!
+ XCTAssertTrue(fileExist(name: resultPath))
+ expectation.fulfill()
+}
+self.waitForExpectations(timeout: testTimeout, handler: nil)
+</code></pre>
+<h2>Documentation for API Endpoints</h2>
+<p>All URIs are relative to <em><a href="https://api.aspose.cloud/v4.0">https://api.aspose.cloud/v4.0</a></em></p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>HtmlAPI</em></td>
+<td><a href="docs/ConversionApi.md#convertlocaltolocal"><strong>convertLocalToLocal</strong></a></td>
+<td>Convert the HTML or EPUB document from local disk to a local disk.</td>
+</tr>
+<tr>
+<td><em>HtmlAPI</em></td>
+<td><a href="docs/ConversionApi.md#convertlocaltostorage"><strong>convertLocalToStorage</strong></a></td>
+<td>Convert the HTML or EPUB document from local disk to user's storage.</td>
+</tr>
+<tr>
+<td><em>HtmlAPI</em></td>
+<td><a href="docs/ConversionApi.md#convertstoragetolocal"><strong>convertStorageToLocal</strong></a></td>
+<td>Convert the HTML or EPUB document from user's storage to local disk.</td>
+</tr>
+<tr>
+<td><em>HtmlAPI</em></td>
+<td><a href="docs/ConversionApi.md#convertstoragetostorage"><strong>convertStorageToStorage</strong></a></td>
+<td>Convert the HTML or EPUB document from user's storage to user's storage.</td>
+</tr>
+<tr>
+<td><em>HtmlAPI</em></td>
+<td><a href="docs/ConversionApi.md#converturltolocal"><strong>convertUrlToLocal</strong></a></td>
+<td>Convert the HTML document by URL to local disk.</td>
+</tr>
+<tr>
+<td><em>HtmlAPI</em></td>
+<td><a href="docs/ConversionApi.md#converturltostorage"><strong>convertUrlToStorage</strong></a></td>
+<td>Convert the HTML document by URL to user's storage.</td>
+</tr>
+<tr>
+<td><em>HtmlAPI</em></td>
+<td><a href="docs/ConversionApi.md#convert"><strong>convert</strong></a></td>
+<td>Convert the HTML, EPUB or URL to the specified format.</td>
+</tr>
+</tbody>
+</table>
+<h2>Documentation For Authorization</h2>
+<h2>oauth</h2>
+<ul>
+<li><strong>Type</strong>: OAuth2</li>
+<li><strong>Flow</strong>: application</li>
+<li><strong>Authorization URL</strong>: "https://api.aspose.cloud/connect/token"</li>
+<li><strong>Scopes</strong>: N/A</li>
+</ul>
+<h3>Examples</h3>
+<p>Test uses StorageApi for upload(download) file to(from) remote storage.</p>
+<h2>Documentation for Storage API Endpoints</h2>
+<p>All URIs are relative to <em><a href="https://api.aspose.cloud/v4.0">https://api.aspose.cloud/v4.0</a></em></p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>StorageAPI</em></td>
+<td><a href="docs/FileApi.md#deletefile"><strong>deleteFile</strong></a></td>
+<td>Delete file</td>
+</tr>
+<tr>
+<td><em>StorageAPI</em></td>
+<td><a href="docs/FileApi.md#downloadfile"><strong>downloadFile</strong></a></td>
+<td>Download file</td>
+</tr>
+<tr>
+<td><em>StorageAPI</em></td>
+<td><a href="docs/FileApi.md#uploadfile"><strong>uploadFile</strong></a></td>
+<td>Upload file</td>
+</tr>
+<tr>
+<td><em>StorageAPI</em></td>
+<td><a href="docs/FolderApi.md#createfolder"><strong>createFolder</strong></a></td>
+<td>Create the folder</td>
+</tr>
+<tr>
+<td><em>StorageAPI</em></td>
+<td><a href="docs/FolderApi.md#deletefolder"><strong>deleteFolder</strong></a></td>
+<td>Delete folder</td>
+</tr>
+<tr>
+<td><em>StorageAPI</em></td>
+<td><a href="docs/FolderApi.md#getfileslist"><strong>getFilesList</strong></a></td>
+<td>Get all files and folders within a folder</td>
+</tr>
+<tr>
+<td><em>StorageAPI</em></td>
+<td><a href="docs/StorageApi.md#getdiscusage"><strong>getDiscUsage</strong></a></td>
+<td>Get disc usage</td>
+</tr>
+<tr>
+<td><em>StorageAPI</em></td>
+<td><a href="docs/StorageApi.md#objectexists"><strong>objectExists</strong></a></td>
+<td>Check if file or folder exists</td>
+</tr>
+<tr>
+<td><em>StorageAPI</em></td>
+<td><a href="docs/StorageApi.md#storageexists"><strong>storageExists</strong></a></td>
+<td>Check if storage exists</td>
+</tr>
+</tbody>
+</table>
+<h2>Documentation for Models</h2>
+<ul>
+<li><a href="docs/DiscUsage.md">DiscUsage</a></li>
+<li><a href="docs/ErrorDetails.md">ErrorDetails</a></li>
+<li><a href="docs/FilesList.md">FilesList</a></li>
+<li><a href="docs/FilesUploadResult.md">FilesUploadResult</a></li>
+<li><a href="docs/FileVersion.md">FileVersion</a></li>
+<li><a href="docs/FileVersions.md">FileVersions</a></li>
+<li><a href="docs/ModelError.md">ModelError</a></li>
+<li><a href="docs/ObjectExists.md">ObjectExist</a></li>
+<li><a href="docs/StorageExist.md">StorageExist</a></li>
+<li><a href="docs/StorageFile.md">StorageFile</a></li>
+</ul>
+<p><a href="./Tests/AsposeHtmlTests/">Tests</a> contain various examples of using the Aspose.HTML and Aspose.Storage SDK.</p>
+</body></html>

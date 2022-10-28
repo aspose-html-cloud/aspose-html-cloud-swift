@@ -2,27 +2,30 @@ MIME-Version: 1.0
 Content-Type: Multipart/related; boundary="boundary";type=Text/HTML
 
 --boundary
-Content-Type: text/html;
-Content-Location: UrlToLocDoc.mhtml
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+Content-ID: <1>
+Content-Location: https://stallman.org/articles/anonymous-payments-thru-phones.html
 
 <!DOCTYPE html><html><head>
   <title>Anonymous internet payments using pay phones</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <link media="all" href="/common/stallman.css" type="text/css" rel="stylesheet">
-  <link rel="icon" href="/common/rms.png">
+  <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8">
+  <link media=3D"all" href=3D"https://stallman.org/common/stallman.css" typ=
+e=3D"text/css" rel=3D"stylesheet">
+  <link rel=3D"icon" href=3D"https://stallman.org/common/rms.png">
 </head>
 
 <body>
 <h1>Richard Stallman's personal site.</h1>
-<h2><a href="/">https://stallman.org</a></h2>
+<h2><a href=3D"https://stallman.org/">https://stallman.org</a></h2>
 <p>
 For current political commentary, see
-the <a href="/archives/polnotes.html">daily
+the <a href=3D"https://stallman.org/archives/polnotes.html">daily
 political notes</a>.
 </p>
 <p>
-<a href="/biographies.html#serious">RMS's Bio</a> |
-<a href="http://gnu.org">The GNU Project</a>
+<a href=3D"https://stallman.org/biographies.html#serious">RMS's Bio</a> |
+<a href=3D"http://gnu.org/">The GNU Project</a>
 </p>
 
 <hr>

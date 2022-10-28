@@ -390,7 +390,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
         }
     }
 
-    func testConvert() {
+    func testConvertHtml() {
         
         let expectation = self.expectation(description: "testConvert")
         let fileName = "test1.html"
@@ -424,6 +424,6 @@ final class AsposeHtmlCloudTests: TestBaseCase {
         ("testUrlToLocalImage", testUrlToLocalImage),
         ("testUrlToStorageDoc", testUrlToStorageDoc),
         ("testUrlToStorageImage", testUrlToStorageImage),
-        ("testConvert", testConvert)
+        ("testConvertHtml", testConvertHtml)
     ]
 }

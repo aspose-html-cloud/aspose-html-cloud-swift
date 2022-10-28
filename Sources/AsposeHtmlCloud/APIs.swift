@@ -88,7 +88,7 @@ open class ClientAPI {
             
             // Add identity headers to SDK
             ClientAPI.customHeaders["x-aspose-client"] = "aspose.html-cloud swift sdk"
-            ClientAPI.customHeaders["x-aspose-client-version"] = "22.10.1"
+            ClientAPI.customHeaders["x-aspose-client-version"] = "22.10.2"
 
             ds.signal()
         })
