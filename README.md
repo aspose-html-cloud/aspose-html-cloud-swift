@@ -25,10 +25,12 @@ To use Aspose HTML for Cloud SDK you need to register an account with [Aspose Cl
 Before create configuration, then use HtmlAPI or StorageAPI (see tests)   
 
 ### Possible conversions:
-- HTML -> PDF, XPS, DOCX, MD, MHTML, JPEG, BMP, PNG, GIF, TIFF
-- EPUB -> PDF, XPS, DOCX, JPEG, BMP, PNG, GIF, TIFF
-- MD -> PDF, XPS, DOCX, HTML, MHTML, JPEG, BMP, PNG, GIF, TIFF
-- MHTML -> PDF, XPS, DOCX, JPEG, BMP, PNG, GIF, TIFF
+- HTML -> PDF, XPS, DOCX, MD, MHTML, JPEG, BMP, PNG, TIFF, GIF
+- EPUB -> PDF, XPS, DOCX, JPEG, BMP, PNG, TIFF, GIF
+- MD -> PDF, XPS, DOCX, HTML, MHTML, JPEG, BMP, PNG, TIFF, GIF
+- MHTML -> PDF, XPS, DOCX, JPEG, BMP, PNG, TIFF, GIF
+- SVG -> PDF, XPS, JPEG, BMP, PNG, TIFF, GIF
+- JPEG, BMP, PNG, TIFF, GIF -> SVG
 
 
 Example:   
