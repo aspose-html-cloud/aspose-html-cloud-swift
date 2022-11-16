@@ -32,7 +32,7 @@ import Alamofire
 open class HtmlAPI {
 
     /**
-     Converts the HTML or EPUB document located on a local disk to a local disk.
+     Converts a document located on a local disk to a local disk.
 
      - parameter src: (String) Full path to the source file on a local disk.
      - parameter dst: (String) Full path to the result file on a local disk.
@@ -53,7 +53,7 @@ open class HtmlAPI {
     }
 
     /**
-     Converts the HTML or EPUB document located on a local disk to a user's storage.
+     Converts a document located on a local disk to a user's storage.
 
      - parameter src: (String) Full path to the source file on a local disk.
      - parameter dst: (String) Full path to the result file on a storage.
@@ -75,7 +75,7 @@ open class HtmlAPI {
     }
 
     /**
-     Converts the HTML or EPUB document located on a user's storage to a local disk.
+     Converts a document located on a user's storage to a local disk.
 
      - parameter src: (String) Full path to the source file on a user's storage.
      - parameter dst: (String) Full path to the result file on a local disk.
@@ -97,7 +97,7 @@ open class HtmlAPI {
     }
 
     /**
-     Converts the HTML or EPUB document located on a user's storage to a user's storage.
+     Converts a document located on a user's storage to a user's storage.
 
      - parameter src: (String) Full path to the source file on a storage.
      - parameter dst: (String) Full path to the result file on a storage.
@@ -200,13 +200,13 @@ open class HtmlAPI {
         if !isUrl {
             let ext = URL(string: src)!.pathExtension
             switch ext {
-            case "html":
-                fallthrough
+            case "jpg":
+                inputFormat = "jpeg"
+            case "tif":
+                inputFormat = "tiff"
             case "htm":
                 inputFormat = "html"
             case "mht":
-                fallthrough
-            case "mhtml":
                 inputFormat = "mhtml"
             default:
                 inputFormat = ext

@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose" file="AsposeMHTMLCloudTest.swift">
+ * <copyright company="Aspose" file="AsposeMHTMLCloudTests.swift">
  *  Copyright (c) 2022 Aspose.HTML for Cloud
  * </copyright>
  * <summary>

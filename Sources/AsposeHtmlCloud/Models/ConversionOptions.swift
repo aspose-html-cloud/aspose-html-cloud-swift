@@ -48,15 +48,50 @@ public struct ConversionOptions: Codable {
 
     /** Bottom margin in pixels and inches for PDF, XPS, DOCX formats.  */
     public var bottomMargin: Float32?
+    
+    /** CSS background like '#FF0000'. For conversion from SVG only.  */
+    public var background: String?
 
-    public init(width: Float32?, height: Float32?, leftMargin: Float32?,
-                rightMargin: Float32?, topMargin: Float32?, bottomMargin: Float32?) {
+    /** For conversion to markdown only. Use git flavor. True or False. Default false.  */
+    public var usegit: Bool?
+    
+    /** For trace image to SVG. This parameter defines maximum deviation of points to fitted curve. By default it is 30.  */
+    public var error_threshold: Float32?
+    
+    /** For trace image to SVG. This parameter defines number of iteration for least-squares approximation method. By default it is 30.  */
+    public var max_iterations: Int32?
+    
+    /** For trace image to SVG. The maximum number of colors used to quantize an image. Default value is 25. */
+    public var colors_limit: Int32?
+    
+    /** For trace image to SVG. The value of this parameter is affected by the graphics scale. Default value is 1.   */
+    public var line_width: Float32?
+
+    public init(width: Float32? = nil,
+                height: Float32? = nil,
+                leftMargin: Float32? = nil,
+                rightMargin: Float32? = nil,
+                topMargin: Float32? = nil,
+                bottomMargin: Float32? = nil,
+                background: String? = nil,
+                error_threshold: Float32? = nil,
+                max_iterations: Int32? = nil,
+                colors_limit: Int32? = nil,
+                line_width: Float32? = nil,
+                usegit: Bool? = nil
+    ){
         self.width = width
         self.height = height
         self.leftMargin = leftMargin
         self.rightMargin = rightMargin
         self.topMargin = topMargin
         self.bottomMargin = bottomMargin
+        self.background = background
+        self.error_threshold = error_threshold
+        self.max_iterations = max_iterations
+        self.colors_limit = colors_limit
+        self.line_width = line_width
+        self.usegit = usegit
     }
     
     public enum CodingKeys: String, CodingKey {
@@ -66,7 +101,12 @@ public struct ConversionOptions: Codable {
         case rightMargin = "rightmargin"
         case topMargin = "topmargin"
         case bottomMargin = "bottommargin"
-
+        case background = "background"
+        case error_threshold = "error_threshold"
+        case max_iterations = "max_iterations"
+        case colors_limit = "colors_limit"
+        case line_width = "line_width"
+        case usegit = "usegit"
     }
 
 }
