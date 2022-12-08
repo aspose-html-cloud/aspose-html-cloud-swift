@@ -62,6 +62,7 @@ ClientAPI.setConfig(
 
 let fileName = "test1.html"
 let src = url(forResource: fileName).absoluteString
+let format = "jpeg"
 
 let expectation = self.expectation(description: "testConvert to \(format)")
 let dst = resultDir.appendingPathComponent("LocToLocDoc.\(format)").absoluteString
