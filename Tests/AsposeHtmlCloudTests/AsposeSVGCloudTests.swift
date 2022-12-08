@@ -61,7 +61,7 @@ final class AsposeSVGCloudTests: TestBaseCase {
 
         let fileName = "testpage1.svg"
         let src = url(forResource: fileName).absoluteString
-        let options_A4 = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2, rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
+        let options_A4 = Options(width: 8.3, height: 11.7, leftMargin: 0.2, rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
 
         for format in formats {
             let expectation = self.expectation(description: "testConvert SVG to \(format)")
@@ -86,7 +86,7 @@ final class AsposeSVGCloudTests: TestBaseCase {
 
         let fileName = "testpage1.svg"
         let src = url(forResource: fileName).absoluteString
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -143,7 +143,7 @@ final class AsposeSVGCloudTests: TestBaseCase {
 
         let fileName = "testpage1.svg"
         let src = url(forResource: fileName).absoluteString
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -199,7 +199,7 @@ final class AsposeSVGCloudTests: TestBaseCase {
 
         let formats = ["jpeg", "jpg", "bmp", "png", "tiff", "tif", "gif"]
         let src = "testpage1.svg"
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -252,7 +252,7 @@ final class AsposeSVGCloudTests: TestBaseCase {
     func testStorageToStorageSVGToImage() {
         let formats = ["jpeg", "jpg", "bmp", "png", "tiff", "tif", "gif"]
         let src = "testpage1.svg"
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {

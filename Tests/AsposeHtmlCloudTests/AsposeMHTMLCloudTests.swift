@@ -61,7 +61,7 @@ final class AsposeMHTMLCloudTests: TestBaseCase {
 
         let fileName = "fileformatinfo.mht"
         let src = url(forResource: fileName).absoluteString
-        let options_A4 = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2, rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
+        let options_A4 = Options(width: 8.3, height: 11.7, leftMargin: 0.2, rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
 
         for format in formats {
             let expectation = self.expectation(description: "testConvert MHTML to \(format)")
@@ -86,7 +86,7 @@ final class AsposeMHTMLCloudTests: TestBaseCase {
 
         let fileName = "fileformatinfo.mht"
         let src = url(forResource: fileName).absoluteString
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -143,7 +143,7 @@ final class AsposeMHTMLCloudTests: TestBaseCase {
 
         let fileName = "fileformatinfo.mht"
         let src = url(forResource: fileName).absoluteString
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -199,7 +199,7 @@ final class AsposeMHTMLCloudTests: TestBaseCase {
 
         let formats = ["jpeg", "jpg", "bmp", "png", "tiff", "tif", "gif"]
         let src = "fileformatinfo.mht"
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -252,7 +252,7 @@ final class AsposeMHTMLCloudTests: TestBaseCase {
     func testStorageToStorageMHTMLToImage() {
         let formats = ["jpeg", "jpg", "bmp", "png", "tiff", "tif", "gif"]
         let src = "fileformatinfo.mht"
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {

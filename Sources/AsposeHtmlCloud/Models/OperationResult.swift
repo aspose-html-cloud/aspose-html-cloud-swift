@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose" file="ConversionResult.swift">
+ * <copyright company="Aspose" file="OperationResult.swift">
  *  Copyright (c) 2022 Aspose.HTML for Cloud
  * </copyright>
  * <summary>
@@ -28,7 +28,7 @@
 import Foundation
 
 /** Object exists */
-public struct ConversionResult: Codable {
+public struct OperationResult: Codable {
 
     /** HTTP code for result. */
     public var code: UInt32
