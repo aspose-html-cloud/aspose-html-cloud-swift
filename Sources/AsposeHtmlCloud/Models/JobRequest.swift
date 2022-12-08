@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose" file="ConversionRequest.swift">
+ * <copyright company="Aspose" file="JobRequest.swift">
  *  Copyright (c) 2022 Aspose.HTML for Cloud
  * </copyright>
  * <summary>
@@ -27,15 +27,15 @@
 
 import Foundation
 
-public struct ConversionRequest: Codable {
+public struct JobRequest: Codable {
 
     public var inputPath: String
     public var storageName: String?
     public var resources: [String]?
     public var outputFile: String?
-    public var options: ConversionOptions?
+    public var options: Options?
 
-    public init(inputPath: String, outputFile: String?, options: ConversionOptions? = nil, storageName: String? = nil, resources: [String]? = nil) {
+    public init(inputPath: String, outputFile: String?, options: Options? = nil, storageName: String? = nil, resources: [String]? = nil) {
         self.inputPath = inputPath
         self.outputFile = outputFile
         self.options = options
@@ -82,7 +82,7 @@ public struct ConversionRequest: Codable {
         storageName = try container.decodeIfPresent(String.self, forKey: "storageName")
         resources = try container.decodeIfPresent([String].self, forKey: "resources")
         outputFile = try container.decodeIfPresent(String.self, forKey: "outputFile")
-        options = try container.decodeIfPresent(ConversionOptions.self, forKey: "options")
+        options = try container.decodeIfPresent(Options.self, forKey: "options")
         var nonAdditionalPropertyKeys = Set<String>()
         nonAdditionalPropertyKeys.insert("inputPath")
         nonAdditionalPropertyKeys.insert("storageName")

@@ -60,7 +60,7 @@ final class AsposeToSVGCloudTests: TestBaseCase {
         let formats = ["jpg", "bmp", "tiff", "png", "gif"]
 
         let fileName = "car."
-        let options = ConversionOptions(error_threshold: 5, max_iterations: 30, colors_limit: 3, line_width: 2.0 )
+        let options = Options(error_threshold: 5, max_iterations: 30, colors_limit: 3, line_width: 2.0 )
 
         for format in formats {
             let src = url(forResource: fileName).absoluteString + format

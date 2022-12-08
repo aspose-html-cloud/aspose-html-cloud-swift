@@ -1,4 +1,4 @@
-## ConversionResult
+## OperationResult
 
 ### Fields
 | Field            | Type      | Description                                                                  |

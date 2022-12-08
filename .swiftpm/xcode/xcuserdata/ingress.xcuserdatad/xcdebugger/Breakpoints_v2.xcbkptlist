@@ -30,10 +30,10 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "convertUrlToLocal(src:dst:options:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "HtmlAPI"
+            landmarkType = "3">
             <Locations>
                <Location
                   uuid = "11801555-93BC-46DB-95D3-2CDEEA87E6A0 - 1fc04d1dd90db87b"
@@ -78,8 +78,8 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "148"
-            endingLineNumber = "148"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "HtmlAPI"
             landmarkType = "3">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "235"
-            endingLineNumber = "235"
+            startingLineNumber = "305"
+            endingLineNumber = "305"
             landmarkName = "convert(src:dst:srcInLocal:dstInLocal:isUrl:options:storage:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "252"
-            endingLineNumber = "252"
+            startingLineNumber = "322"
+            endingLineNumber = "322"
             landmarkName = "convert(src:dst:srcInLocal:dstInLocal:isUrl:options:storage:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,9 +126,9 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "254"
-            endingLineNumber = "254"
-            landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
+            startingLineNumber = "324"
+            endingLineNumber = "324"
+            landmarkName = "convert(src:dst:srcInLocal:dstInLocal:isUrl:options:storage:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -142,8 +142,8 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "332"
-            endingLineNumber = "332"
+            startingLineNumber = "402"
+            endingLineNumber = "402"
             landmarkName = "checkStatus(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "361"
-            endingLineNumber = "361"
+            startingLineNumber = "431"
+            endingLineNumber = "431"
             landmarkName = "checkStatus(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "357"
+            endingLineNumber = "357"
             landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "281"
-            endingLineNumber = "281"
+            startingLineNumber = "351"
+            endingLineNumber = "351"
             landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -256,7 +256,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
-            landmarkName = "url(forResource:)"
+            landmarkName = "fileExist(name:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -270,8 +270,8 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "265"
-            endingLineNumber = "265"
+            startingLineNumber = "335"
+            endingLineNumber = "335"
             landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -302,8 +302,8 @@
             filePath = "Sources/AsposeHtmlCloud/APIs/HtmlAPI.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "298"
-            endingLineNumber = "298"
+            startingLineNumber = "368"
+            endingLineNumber = "368"
             landmarkName = "createConversion(path:parameters:dstInLocal:dst:storage:completion:)"
             landmarkType = "7">
          </BreakpointContent>

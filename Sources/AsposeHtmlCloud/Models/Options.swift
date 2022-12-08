@@ -1,6 +1,6 @@
 /**
  * --------------------------------------------------------------------------------------------------------------------
- * <copyright company="Aspose" file="ConversionOptions.swift">
+ * <copyright company="Aspose" file="Options.swift">
  *  Copyright (c) 2022 Aspose.HTML for Cloud
  * </copyright>
  * <summary>
@@ -28,7 +28,7 @@
 import Foundation
 
 /** File or folder information */
-public struct ConversionOptions: Codable {
+public struct Options: Codable {
 
 
     /** Width in pixels for images and inches for PDF, XPS, DOCX formats. */

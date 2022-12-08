@@ -61,7 +61,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
 
         let fileName = "test1.html"
         let src = url(forResource: fileName).absoluteString
-        let options_A4 = ConversionOptions(width: 8.3, height: 11.7, leftMargin: 0.2, rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
+        let options_A4 = Options(width: 8.3, height: 11.7, leftMargin: 0.2, rightMargin: 0.2, topMargin: 0.2, bottomMargin: 0.2)
 
         for format in formats {
             let expectation = self.expectation(description: "testConvert to \(format)")
@@ -86,7 +86,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
 
         let fileName = "test1.html"
         let src = url(forResource: fileName).absoluteString
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -143,7 +143,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
 
         let fileName = "test1.html"
         let src = url(forResource: fileName).absoluteString
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -199,7 +199,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
 
         let formats = ["jpeg", "jpg", "bmp", "png", "tiff", "tif", "gif"]
         let src = "test1.html"
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -252,7 +252,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
     func testStorageToStorageHtmlToImage() {
         let formats = ["jpeg", "jpg", "bmp", "png", "tiff", "tif", "gif"]
         let src = "test1.html"
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -306,7 +306,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
     func testUrlToLocalImage() {
         let formats = ["jpeg", "jpg", "bmp", "png", "tiff", "tif", "gif"]
         let src = "https://stallman.org/articles/anonymous-payments-thru-phones.html"
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {
@@ -360,7 +360,7 @@ final class AsposeHtmlCloudTests: TestBaseCase {
     func testUrlToStorageImage() {
         let formats = ["jpeg", "jpg", "bmp", "png", "tiff", "tif", "gif"]
         let src = "https://stallman.org/articles/anonymous-payments-thru-phones.html"
-        let options = ConversionOptions(width: 800, height: 600, leftMargin: 10,
+        let options = Options(width: 800, height: 600, leftMargin: 10,
                 rightMargin: 10, topMargin: 10, bottomMargin: 10)
 
         for format in formats {

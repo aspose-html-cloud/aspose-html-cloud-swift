@@ -82,6 +82,7 @@ self.waitForExpectations(timeout: testTimeout, handler: nil)
 
 All URIs are relative to *https://api.aspose.cloud/v4.0*
 
+### ConversionApi
 
 | Class     | Method                                                                       | Description                                               |
 |-----------|------------------------------------------------------------------------------|-----------------------------------------------------------|
@@ -92,6 +93,18 @@ All URIs are relative to *https://api.aspose.cloud/v4.0*
 | *HtmlAPI* | [**convertUrlToLocal**](docs/ConversionApi.md#converturltolocal)             | Convert the HTML document by URL to local disk.           |
 | *HtmlAPI* | [**convertUrlToStorage**](docs/ConversionApi.md#converturltostorage)         | Convert the HTML document by URL to user's storage.       |
 | *HtmlAPI* | [**convert**](docs/ConversionApi.md#convert)                                 | Convert a document to the specified format.               |
+
+
+### VectorizationApi
+
+| Class     | Method                                                                       | Description                                               |
+|-----------|------------------------------------------------------------------------------|-----------------------------------------------------------|
+| *HtmlAPI* | [**vectorizeLocalToLocal**](docs/VectorizationApi.md#vectorizelocaltolocal)         | Vectorize an image to the SVG format from local disk to a local disk.       |
+| *HtmlAPI* | [**vectorizeLocalToStorage**](docs/VectorizationApi.md#vectorizelocaltostorage)     | Vectorize an image to the SVG format from local disk to user's storage.     |
+| *HtmlAPI* | [**vectorizeStorageToLocal**](docs/VectorizationApi.md#vectorizestoragetolocal)     | Vectorize an image to the SVG format from user's storage to local disk.     |
+| *HtmlAPI* | [**vectorizeStorageToStorage**](docs/VectorizationApi.md#vectorizestoragetostorage) | Vectorize an image to the SVG format from user's storage to user's storage. |
+| *HtmlAPI* | [**vectorize**](docs/VectorizationApi.md#vectorize)                                 | Vectorize an image to the SVG format.               |
+
 
 ## Documentation For Authorization
 

@@ -36,16 +36,10 @@ open class HtmlAPI {
 
      - parameter src: (String) Full path to the source file on a local disk.
      - parameter dst: (String) Full path to the result file on a local disk.
-     - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
+     - parameter options: (Options?) Options for conversion.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
      */
-    open class func convertLocalToLocal(src: String, dst: String, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
+    open class func convertLocalToLocal(src: String, dst: String, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
 
         convert(src: src, dst: dst, srcInLocal: true, dstInLocal: true, isUrl: false, options: options, storage: nil) {(response, error) -> Void in
         completion(response, error)
@@ -58,16 +52,10 @@ open class HtmlAPI {
      - parameter src: (String) Full path to the source file on a local disk.
      - parameter dst: (String) Full path to the result file on a storage.
      - parameter storage: (String?) User's storage. (optional)
-     - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
+     - parameter options: (Options?) Options for conversion.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
      */
-    open class func convertLocalToStorage(src: String, dst: String, storage: String?, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
+    open class func convertLocalToStorage(src: String, dst: String, storage: String?, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
 
         convert(src: src, dst: dst, srcInLocal: true, dstInLocal: false, isUrl: false, options: options, storage: storage) {(response, error) -> Void in
         completion(response, error)
@@ -80,16 +68,10 @@ open class HtmlAPI {
      - parameter src: (String) Full path to the source file on a user's storage.
      - parameter dst: (String) Full path to the result file on a local disk.
      - parameter storage: (String?) User's storage. (optional)
-     - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
+     - parameter options: (Options?) Options for conversion.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
      */
-    open class func convertStorageToLocal(src: String, dst: String, storage: String?, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
+    open class func convertStorageToLocal(src: String, dst: String, storage: String?, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
 
         convert(src: src, dst: dst, srcInLocal: false, dstInLocal: true, isUrl: false, options: options, storage: storage) {(response, error) -> Void in
         completion(response, error)
@@ -102,16 +84,10 @@ open class HtmlAPI {
      - parameter src: (String) Full path to the source file on a storage.
      - parameter dst: (String) Full path to the result file on a storage.
      - parameter storage: (String?) User's storage. (optional)
-     - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
+     - parameter options: (Options?) Options for conversion.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
      */
-    open class func convertStorageToStorage(src: String, dst: String, storage: String?, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
+    open class func convertStorageToStorage(src: String, dst: String, storage: String?, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
 
         convert(src: src, dst: dst, srcInLocal: false, dstInLocal: false, isUrl: false, options: options, storage: storage) {(response, error) -> Void in
         completion(response, error)
@@ -123,16 +99,10 @@ open class HtmlAPI {
 
      - parameter src: (String) Web address.
      - parameter dst: (String) Full path to the result file on a local disk.
-     - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
+     - parameter options: (Options?) Options for conversion.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
      */
-    open class func convertUrlToLocal(src: String, dst: String, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
+    open class func convertUrlToLocal(src: String, dst: String, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
 
         convert(src: src, dst: dst, srcInLocal: false, dstInLocal: true, isUrl: true, options: options) {(response, error) -> Void in
         completion(response, error)
@@ -145,22 +115,122 @@ open class HtmlAPI {
      - parameter src: (String) Web address.
      - parameter dst: (String) Full path to the result file on a storage.
      - parameter storage: (String?) User's storage. (optional)
-     - parameter options: (ConversionOptions?) Options for conversion.
-     - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.rightMargin: (Float32?) Right margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
-     - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
+     - parameter options: (Options?) Options for conversion.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
      */
-    open class func convertUrlToStorage(src: String, dst: String, storage: String?, options: ConversionOptions? = nil, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
+    open class func convertUrlToStorage(src: String, dst: String, storage: String?, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
 
         convert(src: src, dst: dst, srcInLocal: false, dstInLocal: false, isUrl: true, options: options, storage: storage) {(response, error) -> Void in
         completion(response, error)
         }
     }
 
+    /**
+     Vectorize an image located on a local disk to a local disk.
+
+     - parameter src: (String) Full path to the source file on a local disk.
+     - parameter dst: (String) Full path to the result file on a local disk.
+     - parameter options: (Options?) Options for vectorization.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
+     */
+    open class func vectorizeLocalToLocal(src: String, dst: String, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
+
+        vectorize(src: src, dst: dst, srcInLocal: true, dstInLocal: true, options: options, storage: nil) {(response, error) -> Void in
+        completion(response, error)
+        }
+    }
+
+    /**
+     Vectorize an image located on a local disk to a user's storage.
+
+     - parameter src: (String) Full path to the source file on a local disk.
+     - parameter dst: (String) Full path to the result file on a storage.
+     - parameter storage: (String?) User's storage. (optional)
+     - parameter options: (Options?) Options for vectorization.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
+     */
+    open class func vectorizeLocalToStorage(src: String, dst: String, storage: String?, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
+
+        vectorize(src: src, dst: dst, srcInLocal: true, dstInLocal: false, options: options, storage: storage) {(response, error) -> Void in
+        completion(response, error)
+        }
+    }
+
+    /**
+     Vectorize an image located on a user's storage to a local disk.
+
+     - parameter src: (String) Full path to the source file on a user's storage.
+     - parameter dst: (String) Full path to the result file on a local disk.
+     - parameter storage: (String?) User's storage. (optional)
+     - parameter options: (Options?) Options for vectorization.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
+     */
+    open class func vectorizeStorageToLocal(src: String, dst: String, storage: String?, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
+
+        vectorize(src: src, dst: dst, srcInLocal: false, dstInLocal: true, options: options, storage: storage) {(response, error) -> Void in
+        completion(response, error)
+        }
+    }
+
+    /**
+     Vectorize an image located on a user's storage to a user's storage.
+
+     - parameter src: (String) Full path to the source file on a storage.
+     - parameter dst: (String) Full path to the result file on a storage.
+     - parameter storage: (String?) User's storage. (optional)
+     - parameter options: (Options?) Options for vectorization.
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
+     */
+    open class func vectorizeStorageToStorage(src: String, dst: String, storage: String?, options: Options? = nil, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
+
+        vectorize(src: src, dst: dst, srcInLocal: false, dstInLocal: false, options: options, storage: storage) {(response, error) -> Void in
+        completion(response, error)
+        }
+    }
+
+    /**
+     General function for vectorization.
+
+     - parameter src: (String) Source data.
+     - parameter dst: (String) Full path to the result file.
+     - parameter srcInLocal: (Bool) Source file on a local disk.
+     - parameter dstInLocal: (Bool) Save result to a local disk.
+     - parameter options: (Options?) Options for vectorization.
+     - parameter storage: (String?) User's storage. (optional)
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
+     */
+    open class func vectorize(
+        src: String,
+        dst: String,
+        srcInLocal: Bool,
+        dstInLocal: Bool,
+        options: Options?,
+        storage: String? = nil,
+        completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
+
+        let formats = ["jpg", "jpeg", "tif", "tiff", "png", "bmp", "gif"]
+        
+        let inputFormat = URL(string: src)!.pathExtension.lowercased()
+        
+        guard formats.contains(inputFormat) else {
+            print("error=Input format must be an image")
+            completion(nil, nil)
+            return
+        }
+
+        let outputFormat = URL(string: dst)!.pathExtension.lowercased()
+        
+        guard outputFormat == "svg" else {
+            print("error=Output format must be SVG")
+            completion(nil, nil)
+            return
+        }
+        
+        convert(src: src, dst: dst, srcInLocal: srcInLocal, dstInLocal: dstInLocal, isUrl: false, options: options, storage: storage) {(response, error) -> Void in
+        completion(response, error)
+        }
+    }
+    
     /**
      General function for conversion.
 
@@ -169,7 +239,7 @@ open class HtmlAPI {
      - parameter srcInLocal: (Bool) Source file on a local disk.
      - parameter dstInLocal: (Bool) Save result to a local disk.
      - parameter isUrl: (Bool) Source is URL.
-     - parameter options: (ConversionOptions?) Options for conversion.
+     - parameter options: (Options?) Options for conversion.
      - parameter options.width: (Float32?) Resulting width in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter options.height: (Float32?) Resulting height in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter options.leftMargin: (Float32?) Left margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
@@ -177,7 +247,7 @@ open class HtmlAPI {
      - parameter options.topMargin: (Float32?) Top margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter options.bottomMargin: (Float32?) Bottom margin in pixels for images and in inches for PDF, XPS, DOCX formats. (optional)
      - parameter storage: (String?) User's storage. (optional)
-     - parameter completion: Completion handler to receive the data (ConversionResult?) and the error(Error?) objects
+     - parameter completion: Completion handler to receive the data (OperationResult?) and the error(Error?) objects
      */
     open class func convert(
             src: String,
@@ -185,9 +255,9 @@ open class HtmlAPI {
             srcInLocal: Bool,
             dstInLocal: Bool,
             isUrl: Bool,
-            options: ConversionOptions?,
+            options: Options?,
             storage: String? = nil,
-            completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
+            completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
 
         var outFile = URL(string: dst)!.lastPathComponent
 
@@ -198,7 +268,7 @@ open class HtmlAPI {
         var inputFormat = "html"
 
         if !isUrl {
-            let ext = URL(string: src)!.pathExtension
+            let ext = URL(string: src)!.pathExtension.lowercased()
             switch ext {
             case "jpg":
                 inputFormat = "jpeg"
@@ -213,7 +283,7 @@ open class HtmlAPI {
             }
         }
 
-        var outputFormat = URL(string: dst)!.pathExtension
+        var outputFormat = URL(string: dst)!.pathExtension.lowercased()
 
         if outputFormat == "jpg" {
             outputFormat = "jpeg"
@@ -238,24 +308,24 @@ open class HtmlAPI {
                     return
                 }
 
-                let reqBody = ConversionRequest(inputPath: data!.uploaded![0], outputFile: outFile, options: options, storageName: storage, resources: nil)
+                let reqBody = JobRequest(inputPath: data!.uploaded![0], outputFile: outFile, options: options, storageName: storage, resources: nil)
                 let parameters = JSONEncodingHelper.encodingParameters(forEncodableObject: reqBody)
 
                 createConversion(path: path, parameters: parameters!, dstInLocal: dstInLocal, dst: dst, storage: storage, completion: completion)
             }
         } else {
-            let reqBody = ConversionRequest(inputPath: src, outputFile: outFile, options: options, storageName: storage, resources: nil)
+            let reqBody = JobRequest(inputPath: src, outputFile: outFile, options: options, storageName: storage, resources: nil)
             let parameters = JSONEncodingHelper.encodingParameters(forEncodableObject: reqBody)
 
             createConversion(path: path, parameters: parameters!, dstInLocal: dstInLocal, dst: dst, storage: storage, completion: completion)
         }
     }
 
-    private static func createConversion(path: String, parameters: [String:Any], dstInLocal: Bool, dst: String, storage: String?, completion: @escaping ((_ data: ConversionResult?,_ error: Error?) -> Void)) {
+    private static func createConversion(path: String, parameters: [String:Any], dstInLocal: Bool, dst: String, storage: String?, completion: @escaping ((_ data: OperationResult?,_ error: Error?) -> Void)) {
         let URLString = ClientAPI.basePath + path
         let url = NSURLComponents(string: URLString)
 
-        let requestBuilder: RequestBuilder<ConversionResult>.Type = ClientAPI.requestBuilderFactory.getBuilder()
+        let requestBuilder: RequestBuilder<OperationResult>.Type = ClientAPI.requestBuilderFactory.getBuilder()
 
         let req = requestBuilder.init(method: "POST", URLString: (url?.string ?? URLString), parameters: parameters, isBody: true)
 
@@ -270,7 +340,7 @@ open class HtmlAPI {
 
             let id = resp.body!.id
 
-            var answer = ConversionResult()
+            var answer = OperationResult()
 
             while(true){
 
@@ -315,9 +385,9 @@ open class HtmlAPI {
         }
     }
 
-    private static func checkStatus(id: String) -> ConversionResult {
+    private static func checkStatus(id: String) -> OperationResult {
 
-        var result = ConversionResult();
+        var result = OperationResult();
 
         var path = "/html/conversion/{id}"
         path = path.replacingOccurrences(of: "{id}", with: "\(id)", options: .literal, range: nil)
@@ -355,7 +425,7 @@ open class HtmlAPI {
             
             let dataStr = responseString?.data(using: .utf8, allowLossyConversion: false)
      
-            guard let js = try? JSONDecoder().decode(ConversionResult.self, from: dataStr!) else {
+            guard let js = try? JSONDecoder().decode(OperationResult.self, from: dataStr!) else {
                 print("Falied decode json.")
                 return
             }
