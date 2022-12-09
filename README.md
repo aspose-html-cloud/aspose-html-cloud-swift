@@ -98,13 +98,13 @@ All URIs are relative to *https://api.aspose.cloud/v4.0*
 
 ### VectorizationApi
 
-| Class     | Method                                                                       | Description                                               |
-|-----------|------------------------------------------------------------------------------|-----------------------------------------------------------|
+| Class     | Method                                                                              | Description                                                                 |
+|-----------|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------|
 | *HtmlAPI* | [**vectorizeLocalToLocal**](docs/VectorizationApi.md#vectorizelocaltolocal)         | Vectorize an image to the SVG format from local disk to a local disk.       |
 | *HtmlAPI* | [**vectorizeLocalToStorage**](docs/VectorizationApi.md#vectorizelocaltostorage)     | Vectorize an image to the SVG format from local disk to user's storage.     |
 | *HtmlAPI* | [**vectorizeStorageToLocal**](docs/VectorizationApi.md#vectorizestoragetolocal)     | Vectorize an image to the SVG format from user's storage to local disk.     |
 | *HtmlAPI* | [**vectorizeStorageToStorage**](docs/VectorizationApi.md#vectorizestoragetostorage) | Vectorize an image to the SVG format from user's storage to user's storage. |
-| *HtmlAPI* | [**vectorize**](docs/VectorizationApi.md#vectorize)                                 | Vectorize an image to the SVG format.               |
+| *HtmlAPI* | [**vectorize**](docs/VectorizationApi.md#vectorize)                                 | Vectorize an image to the SVG format.                                       |
 
 
 ## Documentation For Authorization
